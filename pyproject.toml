@@ -1,0 +1,23 @@
+# pyproject.toml
+[project]
+name = "Training project on Baza Trainee website automation"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "A training project to improve skills in test automation"
+authors = ["Anya Vasylenko"]
+readme = "README.md"
+
+dependencies = [
+    "playwright>=1.44.0",
+    "pytest>=8.2.1",
+    "pytest-playwright>=0.4.4",
+    "pytest-xdist>=3.6.0",
+    "pytest-dotenv>=0.5.2"
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--base-url https://baza-2-front-one.vercel.app/ --browser-channel chrome --headed --slowmo 300"
+testpaths = [
+    "tests",
+]
