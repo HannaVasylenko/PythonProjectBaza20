@@ -1,10 +1,11 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_name_empty_field_ua(page: Page) -> None:
-    page.goto("/")
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+def test_name_empty_field_ua(page: Page, setup) -> None:
+    #page.goto("/")
+    #page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     page.get_by_placeholder("Ім’я").click()
     page.get_by_placeholder("email@gmail.com").click()
     expect(page.locator("//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
@@ -12,14 +13,14 @@ def test_name_empty_field_ua(page: Page) -> None:
     page.screenshot(path="name_ffua_scr/nameemptyf.png")
 
 
-def test_name_space_field_ua(page: Page) -> None:
-    page.goto("/")
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+def test_name_space_field_ua(page: Page, setup) -> None:
+    #page.goto("/")
+    #page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     page.get_by_placeholder("Ім’я").type(" ")
     page.get_by_placeholder("email@gmail.com").click()
     expect(page.locator("//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть ім’я")
-    page.screenshot(path="name_ffua_scr/namespacef.png")
+    #page.screenshot(path="name_ffua_scr/namespacef.png")
 
 
 def test_name_1char_field_ua(page: Page) -> None:

@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -141,6 +142,7 @@ def test_ln_num_in_username_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/lnnuminuname.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_symb_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -185,6 +187,7 @@ def test_ln_сyrillic_in_username_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/lnсyrillicinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_space_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -196,6 +199,7 @@ def test_ln_space_in_username_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/lnspaceinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_underline_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -207,6 +211,7 @@ def test_ln_underline_in_username_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/lnundinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_point_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()

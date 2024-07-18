@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -44,6 +45,7 @@ def test_lnpr_сyrillic_in_username_en(page: Page) -> None:
     page.screenshot(path="lnpren_screenshots/lncyrinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_symb_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -58,6 +60,7 @@ def test_lnpr_symb_in_username_en(page: Page) -> None:
     page.screenshot(path="lnpren_screenshots/lnsymbinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_space_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -72,6 +75,7 @@ def test_lnpr_space_in_username_en(page: Page) -> None:
     page.screenshot(path="lnpren_screenshots/lnspacebinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_underline_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -86,6 +90,7 @@ def test_lnpr_underline_in_username_en(page: Page) -> None:
     page.screenshot(path="lnpren_screenshots/lnundbinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_point_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()

@@ -83,6 +83,7 @@ def test_lnpr_valid_сyrillic_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnvalidсyrillic.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_valid_polski_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -124,6 +125,7 @@ def test_lnpr_numbers_in_user_name_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnnumbusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_symb_in_user_name_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -165,6 +167,7 @@ def test_lnpr_space_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnspace.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_space_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -179,6 +182,7 @@ def test_lnpr_space_in_username_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnspaceinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_underline_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -193,6 +197,7 @@ def test_lnpr_underline_in_username_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnundinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_point_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()

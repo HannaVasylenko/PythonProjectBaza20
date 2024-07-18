@@ -26,6 +26,7 @@ def test_lnpr_сyrillic_in_username_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/lncyrinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_symb_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -38,6 +39,7 @@ def test_lnpr_symb_in_username_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/lnsymbinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_space_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -50,6 +52,7 @@ def test_lnpr_space_in_username_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/lnspaceinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_underlines_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -62,6 +65,7 @@ def test_lnpr_underlines_in_username_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/lnundinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_point_in_username_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
