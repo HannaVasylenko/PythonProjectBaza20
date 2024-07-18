@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="test variants of 3 website forms">
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -827,7 +822,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721238808498</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project">
+      <option name="closed" value="true" />
+      <created>1721333010598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721333010598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -855,6 +858,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test variants of 3 website forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="test variants of 3 website forms" />
+    <MESSAGE value="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project" />
   </component>
 </project>

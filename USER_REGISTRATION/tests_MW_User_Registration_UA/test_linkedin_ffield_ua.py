@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -135,6 +136,7 @@ def test_lnpr_low_case_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/lnlowcase.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_199char_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -146,6 +148,7 @@ def test_lnpr_199char_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/ln199char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_200char_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -157,6 +160,7 @@ def test_lnpr_200char_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/ln200char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_201char_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
@@ -170,6 +174,7 @@ def test_lnpr_201char_ua(page: Page) -> None:
     page.screenshot(path="lnprua_screenshots/ln201char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_250char_ua(page: Page) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()

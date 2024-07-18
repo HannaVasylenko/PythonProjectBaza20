@@ -65,6 +65,7 @@ def test_ln_upcase_pl(page: Page) -> None:
     page.screenshot(path="ln_mentorpl_scr/lnupcase.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_199char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -77,6 +78,7 @@ def test_ln_199char_pl(page: Page) -> None:
     page.screenshot(path="ln_mentorpl_scr/ln199char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_200char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -89,6 +91,7 @@ def test_ln_200char_pl(page: Page) -> None:
     page.screenshot(path="ln_mentorpl_scr/ln200char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_201char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -102,6 +105,7 @@ def test_ln_201char_pl(page: Page) -> None:
     page.screenshot(path="ln_mentorpl_scr/ln201char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_250char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()

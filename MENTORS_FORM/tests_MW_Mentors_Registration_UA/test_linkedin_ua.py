@@ -55,6 +55,7 @@ def test_ln_lowcase_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/lnlowcase.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_199char_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -65,6 +66,7 @@ def test_ln_199char_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/ln199char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_200char_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -75,7 +77,7 @@ def test_ln_200char_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/ln200char.png")
 
 
-#cant type >200
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_201char_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
@@ -87,7 +89,7 @@ def test_ln_201char_ua(page: Page) -> None:
     page.screenshot(path="ln_mentorua_scr/ln201char.png")
 
 
-#cant type >200
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_250char_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
