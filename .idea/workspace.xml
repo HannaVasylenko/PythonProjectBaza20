@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Noted tests that were not checked in the requirements.">
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -867,7 +855,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721335488665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”">
+      <option name="closed" value="true" />
+      <created>1721395922901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721395922901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -897,6 +893,7 @@
     <MESSAGE value="test variants of 3 website forms" />
     <MESSAGE value="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project" />
     <MESSAGE value="Noted tests that were not checked in the requirements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Noted tests that were not checked in the requirements." />
+    <MESSAGE value="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”" />
   </component>
 </project>

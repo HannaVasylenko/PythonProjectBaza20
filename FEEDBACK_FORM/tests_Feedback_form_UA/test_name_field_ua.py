@@ -207,7 +207,6 @@ def test_name_piletters_field_ua(page: Page, test_input) -> None:
 def test_name_piletterspr_field_ua(page: Page) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-
     page.get_by_placeholder("Ім’я").press("Control+A")
     page.get_by_placeholder("Ім’я").press("Delete")
     page.get_by_placeholder("Ім’я").type("Пръерплрт")
