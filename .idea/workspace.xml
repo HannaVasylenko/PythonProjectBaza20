@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”">
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
@@ -339,6 +350,7 @@
     "Python tests.Python tests for test_email_field_ua.test_email_without_first_domainf_ua.executor": "Run",
     "Python tests.Python tests for test_email_field_ua.test_email_without_namef_ua.executor": "Run",
     "Python tests.Python tests for test_email_field_ua.test_email_сyrillic_in_namef_ua.executor": "Run",
+    "Python tests.Python tests for test_email_fieldff_pl.test_email_сyrillic_in_namef_pl.executor": "Run",
     "Python tests.Python tests for test_email_pl.test_email_56char_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_pl.test_email_polski_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_ua.test_email_1char_in_name_ua.executor": "Run",
@@ -667,9 +679,10 @@
     "Python tests.Python tests in test_email_en.py.executor": "Run",
     "Python tests.Python tests in test_email_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_email_field.py.executor": "Run",
-    "Python tests.Python tests in test_email_field_en.py.executor": "Debug",
+    "Python tests.Python tests in test_email_field_en.py.executor": "Run",
     "Python tests.Python tests in test_email_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_field_ua.py.executor": "Run",
+    "Python tests.Python tests in test_email_fieldff_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_ua.py.executor": "Run",
     "Python tests.Python tests in test_feedback_form_en.py.executor": "Run",
@@ -693,6 +706,7 @@
     "Python tests.Python tests in test_name_field_en.py.executor": "Run",
     "Python tests.Python tests in test_name_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_name_field_ua.py.executor": "Run",
+    "Python tests.Python tests in test_name_fieldff_pl.py.executor": "Run",
     "Python tests.Python tests in test_name_pl.py.executor": "Run",
     "Python tests.Python tests in test_name_ua.py.executor": "Run",
     "Python tests.Python tests in test_phone_en.py.executor": "Run",
@@ -729,89 +743,89 @@
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\MENTORS_FORM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua">
-    <configuration name="Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_feedback_form_pl.py">
+    <configuration name="Python tests for test_email_fieldff_pl.test_email_сyrillic_in_namef_pl" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_motivation_ffield_ua.test_motpr_piletters_ua&quot;" />
+      <option name="_new_target" value="&quot;test_email_fieldff_pl.test_email_сyrillic_in_namef_pl&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_name_ffield_ua.test_namepr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_email_fieldff_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_name_ffield_ua.test_namepr_piletters_ua&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_name_ffield_ua.test_namepr_piletterspr_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_feedback_form_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_name_ffield_ua.test_namepr_piletterspr_ua&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_message_field_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_surname_ffield_ua.test_surnamepr_piletters_ua&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_surname_ffield_ua.test_surnamepr_piletterspr_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_name_fieldff_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_surname_ffield_ua.test_surnamepr_piletterspr_ua&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua" />
-        <item itemvalue="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletterspr_ua" />
-        <item itemvalue="Python tests.Python tests for test_name_ffield_ua.test_namepr_piletters_ua" />
-        <item itemvalue="Python tests.Python tests for test_name_ffield_ua.test_namepr_piletterspr_ua" />
-        <item itemvalue="Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua" />
+        <item itemvalue="Python tests.Python tests in test_feedback_form_pl.py" />
+        <item itemvalue="Python tests.Python tests in test_message_field_pl.py" />
+        <item itemvalue="Python tests.Python tests for test_email_fieldff_pl.test_email_сyrillic_in_namef_pl" />
+        <item itemvalue="Python tests.Python tests in test_email_fieldff_pl.py" />
+        <item itemvalue="Python tests.Python tests in test_name_fieldff_pl.py" />
       </list>
     </recent_temporary>
   </component>
@@ -863,7 +877,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721395922901</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <option name="closed" value="true" />
+      <created>1721397414136</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721397414136</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -894,6 +916,7 @@
     <MESSAGE value="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project" />
     <MESSAGE value="Noted tests that were not checked in the requirements." />
     <MESSAGE value="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
