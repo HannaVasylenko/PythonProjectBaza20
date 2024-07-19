@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -184,12 +185,33 @@ def test_namepr_symbols_ua(page: Page) -> None:
     page.screenshot(path="nameprua_screenshots/namesymbols.png")
 
 
-def test_namepr_piletters_ua(page: Page) -> None:
+@pytest.mark.parametrize("test_input", [
+    ("Пръерплрт"),
+    ("Орамыьтор"),
+    ("апмЭтиор"),
+    ("потлоЁьтбоа"),
+    ("Тиитрэтьтор"),
+    ("Иимпаётир")
+])
+def test_namepr_piletters_ua(page: Page, test_input) -> None:
     page.goto("/")
     page.get_by_role("banner").get_by_role("link", name="Стажування").click()
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     page.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    page.get_by_placeholder("Ім’я").press("Control+A")
+    page.get_by_placeholder("Ім’я").press("Delete")
+    page.get_by_placeholder("Ім’я").type(test_input)
+    page.get_by_placeholder("Прізвище").click()
+    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
+
+@pytest.mark.skip(reason="Rewrote the test using “@pytest.mark.parametrize”")
+def test_namepr_piletterspr_ua(page: Page) -> None:
+    page.goto("/")
+    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
     page.get_by_placeholder("Ім’я").press("Control+A")
     page.get_by_placeholder("Ім’я").press("Delete")
     page.get_by_placeholder("Ім’я").type("Пръерплрт")

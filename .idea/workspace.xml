@@ -4,78 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProjectBaza20.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_discord_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_email_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_motivation_ffield_en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_name_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_phone_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_surname_field.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_MW_User_Registration_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_email_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_name_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_phone_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_surname_field_pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_MW_User_Registration_UA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_discord_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_email_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_phone_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Noted tests that were not checked in the requirements.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +38,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -169,7 +116,10 @@
     "Python tests.Python tests for test_MW_User_Registration_pl.test_send_form_without_last_mw_pl.executor": "Run",
     "Python tests.Python tests for test_MW_User_Registration_pl.test_title_mw_pl.executor": "Run",
     "Python tests.Python tests for test_city_ffield_ua.test_citypr_hyphen_ua.executor": "Run",
+    "Python tests.Python tests for test_city_ffield_ua.test_citypr_space_ua.executor": "Run",
+    "Python tests.Python tests for test_city_ffield_ua.test_piletterspr1_ua.executor": "Run",
     "Python tests.Python tests for test_city_ffield_ua.test_piletterspr_symbols__ua.executor": "Run",
+    "Python tests.Python tests for test_city_ffield_ua.test_piletterspr_ua.executor": "Run",
     "Python tests.Python tests for test_city_field.test_city_15char.executor": "Run",
     "Python tests.Python tests for test_city_field.test_city_1char.executor": "Run",
     "Python tests.Python tests for test_city_field.test_city_29char.executor": "Run",
@@ -204,6 +154,8 @@
     "Python tests.Python tests for test_city_field_pl.test_citypr_hyphen_pl.executor": "Run",
     "Python tests.Python tests for test_country_ffield_ua.test_countrypr_31char_ua.executor": "Run",
     "Python tests.Python tests for test_country_ffield_ua.test_countrypr_50char_ua.executor": "Run",
+    "Python tests.Python tests for test_country_ffield_ua.test_countrypr_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_country_ffield_ua.test_countrypr_piletterspr_ua.executor": "Run",
     "Python tests.Python tests for test_country_field.test_country_15char.executor": "Run",
     "Python tests.Python tests for test_country_field.test_country_1char.executor": "Run",
     "Python tests.Python tests for test_country_field.test_country_29char.executor": "Run",
@@ -340,6 +292,7 @@
     "Python tests.Python tests for test_email_field.test_email_without_name.executor": "Run",
     "Python tests.Python tests for test_email_field.test_email_сyrillic.executor": "Run",
     "Python tests.Python tests for test_email_field_en.test_email_51charf_en.executor": "Run",
+    "Python tests.Python tests for test_email_field_en.test_email_empty_fieldf_en.executor": "Run",
     "Python tests.Python tests for test_email_field_pl.test_email_1char_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_field_pl.test_email_25char_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_field_pl.test_email_2char_in_name_pl.executor": "Run",
@@ -489,16 +442,21 @@
     "Python tests.Python tests for test_message_field_ua.test_message_9char_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_empty_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_num_fieldf_ua.executor": "Run",
+    "Python tests.Python tests for test_message_field_ua.test_message_piletters_fieldf_ua.executor": "Run",
+    "Python tests.Python tests for test_message_field_ua.test_message_piletterspr_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_space_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_symb_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_up_low_case_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_empty_ua.executor": "Run",
     "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletterspr_ua.executor": "Run",
     "Python tests.Python tests for test_name.test_name_1_char.executor": "Run",
     "Python tests.Python tests for test_name.test_name_only_spce.executor": "Run",
     "Python tests.Python tests for test_name.test_name_space.executor": "Run",
     "Python tests.Python tests for test_name_en.test_name_empty_en.executor": "Run",
     "Python tests.Python tests for test_name_en.test_name_symbols_en.executor": "Run",
+    "Python tests.Python tests for test_name_ffield_ua.test_namepr_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_name_ffield_ua.test_namepr_piletterspr_ua.executor": "Run",
     "Python tests.Python tests for test_name_field.test_name_15_char.executor": "Run",
     "Python tests.Python tests for test_name_field.test_name_1_char.executor": "Run",
     "Python tests.Python tests for test_name_field.test_name_29_char.executor": "Run",
@@ -553,6 +511,8 @@
     "Python tests.Python tests for test_name_field_ua.test_name_hyphen_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_latin_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_num_field_ua.executor": "Run",
+    "Python tests.Python tests for test_name_field_ua.test_name_piletters_field_ua.executor": "Run",
+    "Python tests.Python tests for test_name_field_ua.test_name_piletterstr_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_space_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_symb_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_15char_ua.executor": "Run",
@@ -569,6 +529,8 @@
     "Python tests.Python tests for test_name_ua.test_name_hyphen_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_latin_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_numb_ua.executor": "Run",
+    "Python tests.Python tests for test_name_ua.test_name_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_name_ua.test_name_pilettersm_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_space_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_symbols_ua.executor": "Run",
     "Python tests.Python tests for test_phone_en.test_phone_1char_en.executor": "Run",
@@ -632,6 +594,8 @@
     "Python tests.Python tests for test_phone_ua.test_phone_without_begin_ua.executor": "Run",
     "Python tests.Python tests for test_phone_ua.test_phone_сyrillic_ua.executor": "Run",
     "Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_1char_ua.executor": "Run",
+    "Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletterspr_ua.executor": "Run",
     "Python tests.Python tests for test_surname_field.test_name_1_char.executor": "Run",
     "Python tests.Python tests for test_surname_field.test_surname_1_char.executor": "Run",
     "Python tests.Python tests for test_surname_field.test_surname_25_char.executor": "Run",
@@ -676,6 +640,8 @@
     "Python tests.Python tests for test_surname_ua.test_surname_hyphen_ua.executor": "Run",
     "Python tests.Python tests for test_surname_ua.test_surname_latin_ua.executor": "Run",
     "Python tests.Python tests for test_surname_ua.test_surname_numb_ua.executor": "Run",
+    "Python tests.Python tests for test_surname_ua.test_surname_piletters_ua.executor": "Run",
+    "Python tests.Python tests for test_surname_ua.test_surname_pilettersm_ua.executor": "Run",
     "Python tests.Python tests for test_surname_ua.test_surname_space_ua.executor": "Run",
     "Python tests.Python tests for test_surname_ua.test_surname_symbols_ua.executor": "Run",
     "Python tests.Python tests for test_variants.test_example.executor": "Run",
@@ -713,7 +679,7 @@
     "Python tests.Python tests in test_email_en.py.executor": "Run",
     "Python tests.Python tests in test_email_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_email_field.py.executor": "Run",
-    "Python tests.Python tests in test_email_field_en.py.executor": "Run",
+    "Python tests.Python tests in test_email_field_en.py.executor": "Debug",
     "Python tests.Python tests in test_email_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_field_ua.py.executor": "Run",
     "Python tests.Python tests in test_email_pl.py.executor": "Run",
@@ -771,93 +737,93 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\USER_REGISTRATION" />
-      <recent name="E:\PyCharm\Projects\pythonProjectBaza20\MENTORS_FORM" />
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\FEEDBACK_FORM" />
+      <recent name="E:\PyCharm\Projects\pythonProjectBaza20\MENTORS_FORM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_linkedin_ua.test_ln_point_in_username_ua">
-    <configuration name="Python tests for test_linkedin_ua.test_ln_point_in_username_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua">
+    <configuration name="Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_linkedin_ua.test_ln_point_in_username_ua&quot;" />
+      <option name="_new_target" value="&quot;test_motivation_ffield_ua.test_motpr_piletters_ua&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_linkedin_ua.test_ln_space_in_username_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_name_ffield_ua.test_namepr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_linkedin_ua.test_ln_space_in_username_ua&quot;" />
+      <option name="_new_target" value="&quot;test_name_ffield_ua.test_namepr_piletters_ua&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_linkedin_ua.test_ln_underline_in_username_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_name_ffield_ua.test_namepr_piletterspr_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_linkedin_ua.test_ln_underline_in_username_ua&quot;" />
+      <option name="_new_target" value="&quot;test_name_ffield_ua.test_namepr_piletterspr_ua&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_MW_User_Registration_ENG.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_surname_ffield_ua.test_surnamepr_piletters_ua&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_MW_User_Registration_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_surname_ffield_ua.test_surnamepr_piletterspr_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_MW_User_Registration_pl.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_surname_ffield_ua.test_surnamepr_piletterspr_ua&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_linkedin_ua.test_ln_point_in_username_ua" />
-        <item itemvalue="Python tests.Python tests for test_linkedin_ua.test_ln_underline_in_username_ua" />
-        <item itemvalue="Python tests.Python tests for test_linkedin_ua.test_ln_space_in_username_ua" />
-        <item itemvalue="Python tests.Python tests in test_MW_User_Registration_pl.py" />
-        <item itemvalue="Python tests.Python tests in test_MW_User_Registration_ENG.py" />
+        <item itemvalue="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletters_ua" />
+        <item itemvalue="Python tests.Python tests for test_surname_ffield_ua.test_surnamepr_piletterspr_ua" />
+        <item itemvalue="Python tests.Python tests for test_name_ffield_ua.test_namepr_piletters_ua" />
+        <item itemvalue="Python tests.Python tests for test_name_ffield_ua.test_namepr_piletterspr_ua" />
+        <item itemvalue="Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua" />
       </list>
     </recent_temporary>
   </component>
@@ -877,6 +843,31 @@
       <option name="presentableId" value="Default" />
       <updated>1720552378214</updated>
     </task>
+    <task id="LOCAL-00001" summary="test variants of 3 website forms">
+      <option name="closed" value="true" />
+      <created>1721238808498</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721238808498</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project">
+      <option name="closed" value="true" />
+      <created>1721333010598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721333010598</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Noted tests that were not checked in the requirements.">
+      <option name="closed" value="true" />
+      <created>1721335488665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721335488665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -901,5 +892,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test variants of 3 website forms" />
+    <MESSAGE value="1. Noted tests that were not checked in the requirements.&#10; &#10;2. Tried to use fixtures in the project" />
+    <MESSAGE value="Noted tests that were not checked in the requirements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Noted tests that were not checked in the requirements." />
   </component>
 </project>

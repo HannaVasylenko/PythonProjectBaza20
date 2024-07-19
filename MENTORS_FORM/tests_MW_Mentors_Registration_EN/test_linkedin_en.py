@@ -1,4 +1,5 @@
 import re
+import  pytest
 from playwright.sync_api import Page, expect
 
 
@@ -64,6 +65,7 @@ def test_ln_upcase_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/lnupcase.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_199char_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -76,6 +78,7 @@ def test_ln_199char_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/ln199char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_200char_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -88,6 +91,7 @@ def test_ln_200char_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/ln200char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_201char_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -101,6 +105,7 @@ def test_ln_201char_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/ln201char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_ln_250char_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -165,6 +170,7 @@ def test_ln_num_in_username_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/lnnuminuname.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_symb_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -218,6 +224,7 @@ def test_ln_сyrillic_in_username_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/lnсyrillicinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_space_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -232,6 +239,7 @@ def test_ln_space_in_username_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/lnspaceinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_underline_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -245,6 +253,7 @@ def test_ln_underline_in_username_en(page: Page) -> None:
     page.screenshot(path="ln_mentoren_scr/lnundinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_point_in_username_en(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()

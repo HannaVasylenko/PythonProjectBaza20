@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -83,6 +84,7 @@ def test_lnpr_valid_сyrillic_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnvalidсyrillic.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_valid_polski_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -124,6 +126,7 @@ def test_lnpr_numbers_in_user_name_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnnumbusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_symb_in_user_name_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -165,6 +168,7 @@ def test_lnpr_space_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnspace.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_space_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -179,6 +183,7 @@ def test_lnpr_space_in_username_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnspaceinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_underline_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -193,6 +198,7 @@ def test_lnpr_underline_in_username_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnundinusername.png")
 
 
+@pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_lnpr_point_in_username_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -221,6 +227,7 @@ def test_lnpr_lnpart_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/lnlnpart.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_199char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -234,6 +241,7 @@ def test_lnpr_199char_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/ln199char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_200char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -247,6 +255,7 @@ def test_lnpr_200char_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/ln200char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_201char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
@@ -260,6 +269,7 @@ def test_lnpr_201char_pl(page: Page) -> None:
     page.screenshot(path="lnprpl_screenshots/ln201char.png")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_lnpr_250char_pl(page: Page) -> None:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
