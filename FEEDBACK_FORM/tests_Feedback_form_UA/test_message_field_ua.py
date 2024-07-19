@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -153,10 +154,29 @@ def test_message_num_fieldf_ua(page: Page) -> None:
     page.screenshot(path="message_ffua_scr/messagenumf.png")
 
 
-def test_message_piletters_fieldf_ua(page: Page) -> None:
+@pytest.mark.parametrize("test_input", [
+    ("Пръерплртфівапру"),
+    ("Орамыьторйцукен"),
+    ("апмЭтиорйцукенг"),
+    ("потлоЁьтбоайцукенг"),
+    ("Тиитрэтьторйцукенг"),
+    ("Иимпаётирйцукенг")
+])
+def test_message_piletters_fieldf_ua(page: Page, test_input) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+    page.get_by_placeholder("Ваше повідомлення").press("Control+A")
+    page.get_by_placeholder("Ваше повідомлення").press("Delete")
+    page.get_by_placeholder("Ваше повідомлення").type(test_input)
+    page.get_by_placeholder("email@gmail.com").click()
+    expect(page.locator("//textarea[@id='message']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(page.locator("//label[@for='message']/../following-sibling::p")).to_have_text("Введіть коректне повідомлення")
 
+
+@pytest.mark.skip(reason="Rewrote the test using “@pytest.mark.parametrize”")
+def test_message_piletterspr_fieldf_ua(page: Page) -> None:
+    page.goto("/")
+    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     page.get_by_placeholder("Ваше повідомлення").press("Control+A")
     page.get_by_placeholder("Ваше повідомлення").press("Delete")
     page.get_by_placeholder("Ваше повідомлення").type("Пръерплртфівапру")

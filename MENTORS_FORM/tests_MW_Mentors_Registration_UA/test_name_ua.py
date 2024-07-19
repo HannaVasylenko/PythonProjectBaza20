@@ -1,4 +1,5 @@
 import re
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -189,11 +190,31 @@ def test_name_spacein_ua(page: Page) -> None:
     page.screenshot(path="name_mentorua_scr/namespacein.png")
 
 
-def test_name_piletters_ua(page: Page) -> None:
+@pytest.mark.parametrize("test_input", [
+    ("Пръерплрт"),
+    ("Орамыьтор"),
+    ("апмЭтиор"),
+    ("потлоЁьтбоа"),
+    ("Тиитрэтьтор"),
+    ("Иимпаётир")
+])
+def test_name_piletters_ua(page: Page, test_input) -> None:
     page.goto("/")
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     page.get_by_role("button", name="Стати ментором").click()
+    page.get_by_role("textbox", name="Ім’я", exact=True).press("Control+A")
+    page.get_by_role("textbox", name="Ім’я", exact=True).press("Delete")
+    page.get_by_role("textbox", name="Ім’я", exact=True).type(test_input)
+    page.get_by_placeholder("Прізвище").click()
+    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
+
+@pytest.mark.skip(reason="Rewrote the test using “@pytest.mark.parametrize”")
+def test_name_pilettersm_ua(page: Page) -> None:
+    page.goto("/")
+    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+    page.get_by_role("button", name="Стати ментором").click()
     page.get_by_role("textbox", name="Ім’я", exact=True).press("Control+A")
     page.get_by_role("textbox", name="Ім’я", exact=True).press("Delete")
     page.get_by_role("textbox", name="Ім’я", exact=True).type("Пръерплрт")

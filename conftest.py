@@ -1,5 +1,6 @@
+import pytest
 from pytest import fixture
-from playwright.sync_api import Page
+from playwright.sync_api import Page, sync_playwright
 
 
 @fixture
