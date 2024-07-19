@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-    </list>
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Refactoring. Added setup for different locales. Edited the tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -885,7 +870,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721397414136</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactoring. Added setup for different locales. Edited the tests">
+      <option name="closed" value="true" />
+      <created>1721409813968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721409813968</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -917,6 +910,7 @@
     <MESSAGE value="Noted tests that were not checked in the requirements." />
     <MESSAGE value="Refactoring. Rewrote the tests using “@pytest.mark.parametrize”" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Refactoring. Added setup for different locales. Edited the tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. Added setup for different locales. Edited the tests" />
   </component>
 </project>
