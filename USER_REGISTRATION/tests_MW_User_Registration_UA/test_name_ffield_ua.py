@@ -3,186 +3,138 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_namepr_1_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("ї")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно мати не менше 2 знаків")
-    page.screenshot(path="nameprua_screenshots/name1char.png")
+def test_namepr_1_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("ї")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно мати не менше 2 знаків")
 
 
-def test_namepr_empty_field_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").click()
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть своє ім’я")
-    page.screenshot(path="nameprua_screenshots/nameemptyfield.png")
+def test_namepr_empty_field_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").click()
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть своє ім’я")
 
 
-def test_namepr_2_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("їє")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/name2char.png")
+def test_namepr_2_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("їє")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_3_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("їєа")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/name3char.png")
+def test_namepr_3_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("їєа")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_15_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Технікитестдиза")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/name15char.png")
+def test_namepr_15_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Технікитестдиза")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_29_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклісти")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/name29char.png")
+def test_namepr_29_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклісти")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_30_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклістів")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/name30char.png")
+def test_namepr_30_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклістів")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_31_char_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Техніки тестдизайну чеклістівюа")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
-    page.screenshot(path="nameprua_screenshots/name31char.png")
+def test_namepr_31_char_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Техніки тестдизайну чеклістівюа")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
 
 
-def test_namepr_50_cha_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Технікитестдизайну чеклисти дефектрепортитесткейси")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
-    page.screenshot(path="nameprua_screenshots/name50char.png")
+def test_namepr_50_cha_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Технікитестдизайну чеклисти дефектрепортитесткейси")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
 
 
-def test_namepr_apostrophe_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Т'ехніки'тест'дизайну")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/nameapostrophe.png")
+def test_namepr_apostrophe_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Т'ехніки'тест'дизайну")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_hyphen_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Т-ехніки-тест-дизайну")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/namehyphen.png")
+def test_namepr_hyphen_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Т-ехніки-тест-дизайну")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_space_in_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Техніки тест дизайну")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/namespacein.png")
+def test_namepr_space_in_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_low_case_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("технікитестдизайну")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/namelowcase.png")
+def test_namepr_low_case_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("технікитестдизайну")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_up_case_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("ТЕСТУВАННЯ")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
-    page.screenshot(path="nameprua_screenshots/nameupcase.png")
+def test_namepr_up_case_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("ТЕСТУВАННЯ")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_numbers_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Технікитестдизайну1234567890")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/namenumbers.png")
+def test_namepr_numbers_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Технікитестдизайну1234567890")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
 
-def test_namepr_symbols_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type("Т,е.хн?іки!те@ст")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/namesymbols.png")
+def test_namepr_symbols_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type("Т,е.хн?іки!те@ст")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
 
 @pytest.mark.parametrize("test_input", [
@@ -193,81 +145,21 @@ def test_namepr_symbols_ua(page: Page) -> None:
     ("Тиитрэтьтор"),
     ("Иимпаётир")
 ])
-def test_namepr_piletters_ua(page: Page, test_input) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type(test_input)
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
+def test_namepr_piletters_ua(setup: Page, test_input) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").press("Control+A")
+    setup.get_by_placeholder("Ім’я").press("Delete")
+    setup.get_by_placeholder("Ім’я").type(test_input)
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
 
-@pytest.mark.skip(reason="Rewrote the test using “@pytest.mark.parametrize”")
-def test_namepr_piletterspr_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("Пръерплрт")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name1piletters.png")
-
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("Орамыьтор")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name2piletters.png")
-
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("апмЭтиор")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name3piletters.png")
-
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("потлоЁьтбоа")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name4piletters.png")
-
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("Тиитрэтьтор")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name5piletters.png")
-
-    page.get_by_placeholder("Ім’я").press("Control+A")
-    page.get_by_placeholder("Ім’я").press("Delete")
-    page.get_by_placeholder("Ім’я").type("Иимпаётир")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
-    page.screenshot(path="nameprua_screenshots/name6piletters.png")
-
-
-def test_namepr_only_space_ua(page: Page) -> None:
-    page.goto("/")
-    page.get_by_role("banner").get_by_role("link", name="Стажування").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
-    page.get_by_role("button", name="Доєднатись до проєкту").first.click()
-    page.get_by_placeholder("Ім’я").type(" ")
-    page.get_by_placeholder("Прізвище").click()
-    expect(page.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(page.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть своє ім’я")
-    page.screenshot(path="nameprua_screenshots/nameonlyspace.png")
+def test_namepr_only_space_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ім’я").type(" ")
+    setup.get_by_placeholder("Прізвище").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
+    expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть своє ім’я")
