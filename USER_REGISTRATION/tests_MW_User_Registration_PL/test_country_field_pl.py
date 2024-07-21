@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -8,7 +7,7 @@ def test_country_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Ukraina").type(" ")
     setup_pl.get_by_placeholder("Kijów").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju") #no error mes
+    expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
 
 
 def test_country_empty_user_reg_pl(setup_pl: Page) -> None:

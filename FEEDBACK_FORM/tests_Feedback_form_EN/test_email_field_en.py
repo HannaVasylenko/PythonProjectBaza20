@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -32,7 +31,7 @@ def test_email_latin_in_name_fform_en(setup_en: Page) -> None:
 def test_email_1char_in_name_fform_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("email@gmail.com").type("a@gmail.com")
     setup_en.get_by_placeholder("Your message").click()
-    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >2char
+    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_en.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Please enter a valid email")
 
 
@@ -63,14 +62,14 @@ def test_email_50char_fform_en(setup_en: Page) -> None:
 def test_email_51char_fform_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("email@gmail.com").type("qasdqqwertyuiopasdfghjklqqawseqwertyuiopa@gmail.com")
     setup_en.get_by_placeholder("Your message").click()
-    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >51char
+    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_en.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Please enter a valid email")
 
 
 def test_email_70char_fform_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("email@gmail.com").type("mnbvcxzlkjhgfddxasdqqwertyuiopasdfghjklqqawseqwertyuiopasdfg@gmail.com")
     setup_en.get_by_placeholder("Your message").click()
-    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >51char
+    expect(setup_en.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_en.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Please enter a valid email")
 
 

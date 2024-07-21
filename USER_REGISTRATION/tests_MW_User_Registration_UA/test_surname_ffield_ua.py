@@ -1,4 +1,3 @@
-import re
 import pytest
 from playwright.sync_api import Page, expect
 
@@ -125,7 +124,7 @@ def test_surname_numbers_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Прізвище").type("Технікитестдизайну1234567890")
     setup.get_by_placeholder("Ім’я").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище") #last name
+    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище")
 
 
 def test_surname_symbols_user_reg_ua(setup: Page) -> None:
@@ -134,7 +133,7 @@ def test_surname_symbols_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Прізвище").type("Т.ех,ні!ките@стдиз_айну")
     setup.get_by_placeholder("Ім’я").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище") #last name
+    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище")
 
 
 def test_surname_only_spce_user_reg_ua(setup: Page) -> None:
@@ -162,7 +161,7 @@ def test_surname_piletters_user_reg_ua(setup: Page, test_input) -> None:
     setup.get_by_placeholder("Прізвище").type(test_input)
     setup.get_by_placeholder("Ім’я").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище") #last name
+    expect(setup.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Введіть коректне Прізвище")
 
 
 

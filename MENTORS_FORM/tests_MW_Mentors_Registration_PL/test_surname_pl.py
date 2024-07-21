@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -6,7 +5,7 @@ def test_surname_empty_mentor_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("button", name="Zostać mentorem").click()
     setup_pl.get_by_placeholder("Nazwisko").click()
     setup_pl.get_by_role("textbox", name="Imię", exact=True).click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_pl.locator("//label[@for='lastName']/../following-sibling::p")).to_have_text("Wpisz swoje nazwisko")
 
 

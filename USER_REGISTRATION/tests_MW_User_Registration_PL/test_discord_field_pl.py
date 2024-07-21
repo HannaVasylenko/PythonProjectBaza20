@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -8,7 +7,7 @@ def test_discord_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").click()
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wpisz swoją nazwę użytkownika Discord") #Wpisz pseudonim na Discordzie Wpisz swoją nazwę użytkownika Discord
+    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wpisz swoją nazwę użytkownika Discord")
 
 
 def test_discord_space_user_reg_pl(setup_pl: Page) -> None:
@@ -17,7 +16,7 @@ def test_discord_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").type(" ")
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wpisz swoją nazwę użytkownika Discord") #Wpisz pseudonim na Discordzie Wpisz swoją nazwę użytkownika Discord
+    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wpisz swoją nazwę użytkownika Discord")
 
 
 def test_discord_cyrillic_user_reg_pl(setup_pl: Page) -> None:
@@ -26,7 +25,7 @@ def test_discord_cyrillic_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").type("привіт")
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord") #Wprowadź prawidłową nazwę użytkownika Discord
+    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
 
 
 def test_discord_polski_user_reg_pl(setup_pl: Page) -> None:
@@ -52,7 +51,7 @@ def test_discord_space_in_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").type("test test")
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord") #Wpisz pseudonim na Discordzie Wpisz swoją nazwę użytkownika Discord
+    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
 
 
 def test_discord_1char_user_reg_pl(setup_pl: Page) -> None:
@@ -62,7 +61,7 @@ def test_discord_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
-    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("error min 2 char")#min char
+    expect(setup_pl.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("error min 2 char")
 
 
 def test_discord_2char_user_reg_pl(setup_pl: Page) -> None:

@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -29,7 +28,6 @@ def test_close_success_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_text("-15.00").click()
     setup.locator("label").filter(has_text="Надаю згоду на обробку персональних даних").locator("use").click()
     setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button").click()
-    setup.screenshot(path="mw_mentorua_scr/mwclosesmwO.png")
     setup.locator("//button[@class='CloseBtn_btn__ij9AH UseAlert_close_btn__JJTAr']").click()
     expect(setup.locator("div").filter(has_text="Ваші дані успішно відправлено").nth(1)).to_be_hidden()
 

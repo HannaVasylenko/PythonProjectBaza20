@@ -1,4 +1,3 @@
-import re
 import pytest
 from playwright.sync_api import Page, expect
 
@@ -51,7 +50,7 @@ def test_ln_valid_cyrillic_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/таня")
     setup_pl.locator("label").filter(has_text="Więc").locator("use").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź prawidłowy link do profilu Linkedin") #faild
+    expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź prawidłowy link do profilu Linkedin")
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
@@ -61,7 +60,7 @@ def test_ln_valid_polski_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/łęęęł")
     setup_pl.locator("label").filter(has_text="Więc").locator("use").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m") #Wprowadź prawidłowy link do profilu Linkedin
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
 def test_ln_numbers_user_reg_pl(setup_pl: Page) -> None:

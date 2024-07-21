@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -39,7 +38,7 @@ def test_email_latin_in_name_fform_pl(setup_pl: Page) -> None:
 def test_email_1char_in_name_fform_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("email@gmail.com").type("a@gmail.com")
     setup_pl.get_by_placeholder("Twoja wiadomość").click()
-    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >2char
+    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_pl.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Proszę podać poprawny adres e-mail")
 
 
@@ -70,14 +69,14 @@ def test_email_50char_fform_pl(setup_pl: Page) -> None:
 def test_email_51char_fform_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("email@gmail.com").type("qasdqqwertyuiopasdfghjklqqawseqwertyuiopa@gmail.com")
     setup_pl.get_by_placeholder("Twoja wiadomość").click()
-    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >51char
+    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_pl.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Proszę podać poprawny adres e-mail")
 
 
 def test_email_70char_fform_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("email@gmail.com").type("mnbvcxzlkjhgfddxasdqqwertyuiopasdfghjklqqawseqwertyuiopasdfg@gmail.com")
     setup_pl.get_by_placeholder("Twoja wiadomość").click()
-    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM") #error mes >51char
+    expect(setup_pl.locator("//input[@id='email']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup_pl.locator("//label[@for='email']/../following-sibling::p")).to_have_text("Proszę podać poprawny adres e-mail")
 
 

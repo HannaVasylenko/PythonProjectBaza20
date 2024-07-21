@@ -1,4 +1,3 @@
-import re
 from playwright.sync_api import Page, expect
 
 
@@ -8,7 +7,7 @@ def test_discord_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").click()
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть ім'я користувача в Discord")  # Enter a nickname in Discord Введіть ім'я користувача в Discord Введіть ім'я користувача в Discord
+    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть ім'я користувача в Discord")
 
 
 def test_discord_space_user_reg_ua(setup: Page) -> None:
@@ -17,7 +16,7 @@ def test_discord_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type(" ")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть ім'я користувача в Discord")  # Введіть коректне ім'я користувача в Discord Введіть коректне ім'я користувача в Discord
+    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть ім'я користувача в Discord")
 
 
 def test_discord_cyrillic_user_reg_ua(setup: Page) -> None:
@@ -26,7 +25,7 @@ def test_discord_cyrillic_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("привіт")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")  # Введіть коректне ім'я користувача в Discord Введіть коректне ім'я користувача в Discord
+    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")
 
 
 def test_discord_latin_user_reg_ua(setup: Page) -> None:
@@ -43,7 +42,7 @@ def test_discord_space_in_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("qa manual")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
-    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")  # Введіть коректне ім'я користувача в Discord Введіть коректне ім'я користувача в Discord
+    expect(setup.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")
 
 
 def test_discord_1char_user_reg_ua(setup: Page) -> None:
