@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_lnpr_empty_pl(setup_pl: Page) -> None:
+def test_ln_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").click()
@@ -12,7 +12,7 @@ def test_lnpr_empty_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź swój profil na Linkedin")
 
 
-def test_lnpr_without_http_pl(setup_pl: Page) -> None:
+def test_ln_without_http_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("www.linkedin.com/in/tanya") #http
@@ -21,7 +21,7 @@ def test_lnpr_without_http_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź prawidłowy link do profilu Linkedin")
 
 
-def test_lnpr_valid_pl(setup_pl: Page) -> None:
+def test_ln_valid_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/tanya")
@@ -29,7 +29,7 @@ def test_lnpr_valid_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_lnpr_up_case_pl(setup_pl: Page) -> None:
+def test_ln_up_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/TANYA")
@@ -37,7 +37,7 @@ def test_lnpr_up_case_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_lnpr_low_case_pl(setup_pl: Page) -> None:
+def test_ln_low_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/tanyatest")
@@ -45,7 +45,7 @@ def test_lnpr_low_case_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_lnpr_valid_сyrillic_pl(setup_pl: Page) -> None:
+def test_ln_valid_cyrillic_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/таня")
@@ -55,7 +55,7 @@ def test_lnpr_valid_сyrillic_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
-def test_lnpr_valid_polski_pl(setup_pl: Page) -> None:
+def test_ln_valid_polski_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/łęęęł")
@@ -64,7 +64,7 @@ def test_lnpr_valid_polski_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m") #Wprowadź prawidłowy link do profilu Linkedin
 
 
-def test_lnpr_numbers_pl(setup_pl: Page) -> None:
+def test_ln_numbers_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("1234567890")
@@ -73,7 +73,7 @@ def test_lnpr_numbers_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź prawidłowy link do profilu Linkedin")
 
 
-def test_lnpr_numbers_in_user_name_pl(setup_pl: Page) -> None:
+def test_ln_numbers_in_user_name_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/tanya1758934602") #max char
@@ -82,7 +82,7 @@ def test_lnpr_numbers_in_user_name_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
-def test_lnpr_symb_in_user_name_pl(setup_pl: Page) -> None:
+def test_ln_symb_in_user_name_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/ta.ny@no!v*a?")
@@ -90,7 +90,7 @@ def test_lnpr_symb_in_user_name_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_lnpr_symbols_pl(setup_pl: Page) -> None:
+def test_ln_symbols_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("!@#?*")
@@ -99,7 +99,7 @@ def test_lnpr_symbols_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź prawidłowy link do profilu Linkedin")
 
 
-def test_lnpr_space_pl(setup_pl: Page) -> None:
+def test_ln_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type(" ")
@@ -109,7 +109,7 @@ def test_lnpr_space_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
-def test_lnpr_space_in_username_pl(setup_pl: Page) -> None:
+def test_ln_space_in_username_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/test test")
@@ -119,7 +119,7 @@ def test_lnpr_space_in_username_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
-def test_lnpr_underline_in_username_pl(setup_pl: Page) -> None:
+def test_ln_underline_in_username_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/t_est_test_t")
@@ -129,7 +129,7 @@ def test_lnpr_underline_in_username_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="Verification is absent from the requirements")
-def test_lnpr_point_in_username_pl(setup_pl: Page) -> None:
+def test_ln_point_in_username_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/t.est.test.t")
@@ -138,7 +138,7 @@ def test_lnpr_point_in_username_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='linkedin']/../following-sibling::p")).to_have_text("Wprowadź swój profil na Linkedin")
 
 
-def test_lnpr_lnpart_pl(setup_pl: Page) -> None:
+def test_ln_lnpart_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/")
@@ -148,7 +148,7 @@ def test_lnpr_lnpart_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="The field contains restrictions")
-def test_lnpr_199char_pl(setup_pl: Page) -> None:
+def test_ln_199char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/hecktheplacementofthePartnersblockafterthearticlesblockCheckthesizeanddesignaccordingtothelayoutCheckthattheblockcontainstheНашіпартнериtitleChecthatCheqwertyuioqweasdfghj")
@@ -157,7 +157,7 @@ def test_lnpr_199char_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="The field contains restrictions")
-def test_lnpr_200char_pl(setup_pl: Page) -> None:
+def test_ln_200char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/ChecktheplacementofthePartnersblockafterthearticlesblockCheckthesizeanddesignaccordingtothelayoutCheckthattheblockcontainstheНашіпартнериtitleChecthatCheqwertyuioqweasdfghj")
@@ -166,7 +166,7 @@ def test_lnpr_200char_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="The field contains restrictions")
-def test_lnpr_201char_pl(setup_pl: Page) -> None:
+def test_ln_201char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/sChecktheplacementofthePartnersblockafterthearticlesblockCheckthesizeanddesignaccordingtothelayoutCheckthattheblockcontainsthqwertyuiopastitleChecthatCheqwertyuioqweasdfghjd")
@@ -175,7 +175,7 @@ def test_lnpr_201char_pl(setup_pl: Page) -> None:
 
 
 @pytest.mark.skip(reason="The field contains restrictions")
-def test_lnpr_250char_pl(setup_pl: Page) -> None:
+def test_ln_250char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Link do profilu").type("https://www.linkedin.com/in/ChecktheplacementofthePartnersblockafterthearticlesblockCheckthesizeanddesignaccordingtothelayoutCheckthattheblockcontainstheqwertyuiopastitleChecthatCheqwertyuioqweasdfghjqwertyuiopasdfghjklpzxcvbnmlkjqwertyuiopqwertyuiop")

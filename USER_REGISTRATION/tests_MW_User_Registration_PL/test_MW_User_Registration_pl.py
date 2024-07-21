@@ -2,20 +2,20 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_close_mw_pl(setup_pl: Page) -> None:
+def test_close_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.locator("//button[@class='CloseBtn_btn__ij9AH RegistrationFormModal_closeButton__Wn1pT']").click()
     expect(setup_pl.locator(".RegistrationFormModal_wrapper__bgALB")).to_be_hidden()
 
 
-def test_title_mw_pl(setup_pl: Page) -> None:
+def test_title_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     expect(setup_pl.locator("form h2")).to_have_text("Rejestracja do udziału w projekcie Baza Trainee Ukraine")
 
 
-def test_select_specialization_pl(setup_pl: Page) -> None:
+def test_select_specialization_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.locator("label").filter(has_text="UI/UX Designer").check()
@@ -32,7 +32,7 @@ def test_select_specialization_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("label").filter(has_text="Project Manager")).to_be_checked()
 
 
-def test_select_availability_of_experience_pl(setup_pl: Page) -> None:
+def test_select_availability_of_experience_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.locator("label").filter(has_text="Więc").check()
@@ -41,7 +41,7 @@ def test_select_availability_of_experience_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("label").filter(has_text=re.compile(r"^Nie$"))).to_be_checked()
 
 
-def test_select_questionnaire_pl(setup_pl: Page) -> None:
+def test_select_questionnaire_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.locator("label").filter(has_text="Na stronie Bazy Trainee Ukraina").check()
@@ -56,7 +56,7 @@ def test_select_questionnaire_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("label").filter(has_text="w poście na LinkedIn")).to_be_checked()
 
 
-def test_rules_BazaTrainee_project_mw_pl(setup_pl: Page) -> None:
+def test_rules_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_role("button", name="przeczytaj tutaj").click()
@@ -65,7 +65,7 @@ def test_rules_BazaTrainee_project_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='ModalDocumentPdf_wrapper___sx__']")).to_be_hidden()
 
 
-def test_select_agreement_pl(setup_pl: Page) -> None:
+def test_select_agreement_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.locator("label").filter(has_text="Zgadzam się").check()
@@ -74,7 +74,7 @@ def test_select_agreement_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("label").filter(has_text="Wyrażam zgodę na przetwarzanie")).to_be_checked()
 
     
-def test_active_send_btn_mw_pl(setup_pl: Page) -> None:
+def test_active_send_btn_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").type("Żelisław Andrzej BożenaJózefa")
@@ -96,7 +96,7 @@ def test_active_send_btn_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wysłać")).to_be_enabled()
 
 
-def test_send_form_mw_pl(setup_pl: Page) -> None:
+def test_send_form_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").type("Żelisław Andrzej BożenaJózefa")
@@ -119,7 +119,7 @@ def test_send_form_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("div").filter(has_text="Twoje dane zostały pomyślnie").nth(1)).to_be_visible()
 
 
-def test_send_form_without_last_mw_pl(setup_pl: Page) -> None:
+def test_send_form_without_last_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").type("Żelisław Andrzej BożenaJózefa")
@@ -140,7 +140,7 @@ def test_send_form_without_last_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wysłać")).to_be_disabled()
 
 
-def test_send_form_without_last2_mw_pl(setup_pl: Page) -> None:
+def test_send_form_without_last2_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").type("Żelisław Andrzej BożenaJózefa")
@@ -159,7 +159,7 @@ def test_send_form_without_last2_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wysłać")).to_be_disabled()
 
 
-def test_empty_form_mw_pl(setup_pl: Page) -> None:
+def test_empty_form_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").click()
@@ -174,7 +174,7 @@ def test_empty_form_mw_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wysłać")).to_be_disabled()
 
 
-def test_send_form_without_checkbox_mw_pl(setup_pl: Page) -> None:
+def test_send_form_without_checkbox_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Imię").type("Żelisław Andrzej BożenaJózefa")

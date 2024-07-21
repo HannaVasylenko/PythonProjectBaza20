@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_discordpr_empty_en(setup_en: Page) -> None:
+def test_discord_empty_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").click()
@@ -11,7 +11,7 @@ def test_discordpr_empty_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter your Discord username") #Enter a nickname in Discord Enter your Discord username Enter your Discord username
 
 
-def test_discordpr_space_en(setup_en: Page) -> None:
+def test_discord_space_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type(" ")
@@ -20,7 +20,7 @@ def test_discordpr_space_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter your Discord username") #Enter a nickname in Discord Enter your Discord username Enter your Discord username
 
 
-def test_discordpr_сyrillic_en(setup_en: Page) -> None:
+def test_discord_cyrillic_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("привіт")
@@ -29,7 +29,7 @@ def test_discordpr_сyrillic_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter a valid Discord username") # Enter a valid Discord username Enter a valid Discord username
 
 
-def test_discordpr_latin_en(setup_en: Page) -> None:
+def test_discord_latin_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("pryvit")
@@ -37,7 +37,7 @@ def test_discordpr_latin_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_spacein_en(setup_en: Page) -> None:
+def test_discord_space_in_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("test test")
@@ -46,7 +46,7 @@ def test_discordpr_spacein_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter a valid Discord username") #Enter a nickname in Discord Enter your Discord username Enter your Discord username
 
 
-def test_discordpr_1char_en(setup_en: Page) -> None:
+def test_discord_1char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("a")
@@ -56,7 +56,7 @@ def test_discordpr_1char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("error mes >2char")
 
 
-def test_discordpr_2char_en(setup_en: Page) -> None:
+def test_discord_2char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("au")
@@ -64,7 +64,7 @@ def test_discordpr_2char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_3char_en(setup_en: Page) -> None:
+def test_discord_3char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("duo")
@@ -72,7 +72,7 @@ def test_discordpr_3char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_17char_en(setup_en: Page) -> None:
+def test_discord_17char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("meredithmarjoryao")
@@ -80,7 +80,7 @@ def test_discordpr_17char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_31char_en(setup_en: Page) -> None:
+def test_discord_31char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgs")
@@ -88,7 +88,7 @@ def test_discordpr_31char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_32char_en(setup_en: Page) -> None:
+def test_discord_32char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgsa")
@@ -96,7 +96,7 @@ def test_discordpr_32char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_33char_en(setup_en: Page) -> None:
+def test_discord_33char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgsak")
@@ -106,7 +106,7 @@ def test_discordpr_33char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("error mes <32char")
 
 
-def test_discordpr_50char_en(setup_en: Page) -> None:
+def test_discord_50char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklq")
@@ -116,7 +116,7 @@ def test_discordpr_50char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("error mes <32char")
 
 
-def test_discordpr_up_case_en(setup_en: Page) -> None:
+def test_discord_up_case_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("NICK")
@@ -125,7 +125,7 @@ def test_discordpr_up_case_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter a valid Discord username")
 
 
-def test_discordpr_numbers_en(setup_en: Page) -> None:
+def test_discord_numbers_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("test9876541230")
@@ -133,7 +133,7 @@ def test_discordpr_numbers_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_underline_en(setup_en: Page) -> None:
+def test_discord_underline_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("t_anya_qa_manual")
@@ -141,7 +141,7 @@ def test_discordpr_underline_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_point_en(setup_en: Page) -> None:
+def test_discord_point_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("t.anya.qa.manu.al")
@@ -149,7 +149,7 @@ def test_discordpr_point_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_discordpr_begin_en(setup_en: Page) -> None:
+def test_discord_begin_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("тanya")
@@ -158,7 +158,7 @@ def test_discordpr_begin_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='discord']/../following-sibling::p")).to_have_text("Enter a valid Discord username")
 
 
-def test_discordpr_symbols_en(setup_en: Page) -> None:
+def test_discord_symbols_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//input[@id='discord']").type("vi@ck!the?be%st")

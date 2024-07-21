@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_motpr_empty_pl(setup_pl: Page) -> None:
+def test_motivation_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").click()
@@ -11,7 +11,7 @@ def test_motpr_empty_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Podaj swoją motywację")
 
 
-def test_motpr_space_pl(setup_pl: Page) -> None:
+def test_motivation_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type(" ")
@@ -20,7 +20,7 @@ def test_motpr_space_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Podaj swoją motywację")
 
 
-def test_motpr_1char_pl(setup_pl: Page) -> None:
+def test_motivation_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ę")
@@ -29,7 +29,7 @@ def test_motpr_1char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
 
 
-def test_motpr_2char_pl(setup_pl: Page) -> None:
+def test_motivation_2char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óę")
@@ -38,7 +38,7 @@ def test_motpr_2char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
 
 
-def test_motpr_5char_pl(setup_pl: Page) -> None:
+def test_motivation_5char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁęża")
@@ -47,7 +47,7 @@ def test_motpr_5char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
 
 
-def test_motpr_9char_pl(setup_pl: Page) -> None:
+def test_motivation_9char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁężaóŁęż")
@@ -56,7 +56,7 @@ def test_motpr_9char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
 
 
-def test_motpr_10char_pl(setup_pl: Page) -> None:
+def test_motivation_10char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁężaóŁężd")
@@ -64,7 +64,7 @@ def test_motpr_10char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_11char_pl(setup_pl: Page) -> None:
+def test_motivation_11char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁężaóŁężd")
@@ -72,7 +72,7 @@ def test_motpr_11char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class","InputField_input___Wj0m")
 
 
-def test_motpr_20char_pl(setup_pl: Page) -> None:
+def test_motivation_20char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ŚwiętoławRóżaWięcław")
@@ -80,7 +80,7 @@ def test_motpr_20char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_49char_pl(setup_pl: Page) -> None:
+def test_motivation_49char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ŚwiętosławRóżaWięcławBłażejChwalibógBłażejŁukszęż")
@@ -88,7 +88,7 @@ def test_motpr_49char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_50char_pl(setup_pl: Page) -> None:
+def test_motivation_50char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ŚwiętosławRóżaWięcławBłażejChwalibógBłażejŁukaszęż")
@@ -96,7 +96,7 @@ def test_motpr_50char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_51char_pl(setup_pl: Page) -> None:
+def test_motivation_51char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ŚwiętosławRóżaWięcławBłażejChwalibógBłażejŁukaszęża")
@@ -105,7 +105,7 @@ def test_motpr_51char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst nie powinien przekraczać 50 znaków")
 
 
-def test_motpr_70char_pl(setup_pl: Page) -> None:
+def test_motivation_70char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklqqwertyuiopasdfghjklp")
@@ -114,7 +114,7 @@ def test_motpr_70char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Tekst nie powinien przekraczać 50 znaków")
 
 
-def test_motpr_symb1_pl(setup_pl: Page) -> None:
+def test_motivation_symb1_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("s!-_().,<>&?@$=+{}#*/[\]")
@@ -122,7 +122,7 @@ def test_motpr_symb1_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_symb2_pl(setup_pl: Page) -> None:
+def test_motivation_symb2_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("s|?%^:;`₴’’””<>&?@$=+*\[/]?%;:")
@@ -130,7 +130,7 @@ def test_motpr_symb2_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_num_pl(setup_pl: Page) -> None:
+def test_motivation_num_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("num1234567890")
@@ -138,7 +138,7 @@ def test_motpr_num_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_upcase_pl(setup_pl: Page) -> None:
+def test_motivation_up_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ŚŁŻABCD")
@@ -146,7 +146,7 @@ def test_motpr_upcase_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_lowcase_pl(setup_pl: Page) -> None:
+def test_motivation_low_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ógłażejukaszęż")

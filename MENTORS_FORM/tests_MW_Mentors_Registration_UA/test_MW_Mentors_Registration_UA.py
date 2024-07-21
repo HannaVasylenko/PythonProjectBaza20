@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_send_form_ua(setup: Page) -> None:
+def test_send_form_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -17,7 +17,7 @@ def test_send_form_ua(setup: Page) -> None:
     expect(setup.locator("div").filter(has_text="Ваші дані успішно відправлено").nth(1)).to_be_visible()
 
 
-def test_close_success_mw_ua(setup: Page) -> None:
+def test_close_success_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -34,7 +34,7 @@ def test_close_success_mw_ua(setup: Page) -> None:
     expect(setup.locator("div").filter(has_text="Ваші дані успішно відправлено").nth(1)).to_be_hidden()
 
 
-def test_active_sendbtn_ua(setup: Page) -> None:
+def test_active_send_btn_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -48,7 +48,7 @@ def test_active_sendbtn_ua(setup: Page) -> None:
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_enabled()
 
 
-def test_hover_sendbtn_ua(setup: Page) -> None:
+def test_hover_send_btn_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -63,12 +63,12 @@ def test_hover_sendbtn_ua(setup: Page) -> None:
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_enabled()
 
 
-def test_default_sendbtn_ua(setup: Page) -> None:
+def test_default_send_btn_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_enabled()
 
 
-def test_disabled_sendbtn_ua(setup: Page) -> None:
+def test_disabled_send_btn_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("ю")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -82,7 +82,7 @@ def test_disabled_sendbtn_ua(setup: Page) -> None:
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_disabled()
 
 
-def test_without_checkbox_mw_ua(setup: Page) -> None:
+def test_without_checkbox_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")
@@ -94,7 +94,7 @@ def test_without_checkbox_mw_ua(setup: Page) -> None:
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_disabled()
 
 
-def test_empty_form_mw_ua(setup: Page) -> None:
+def test_empty_form_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     setup.get_by_placeholder("Прізвище").click()
@@ -106,19 +106,19 @@ def test_empty_form_mw_ua(setup: Page) -> None:
     expect(setup.locator("form").filter(has_text="Реєстрація ментора на Baza").get_by_role("button")).to_be_disabled()
 
 
-def test_title_mw_ua(setup: Page) -> None:
+def test_title_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//h2")).to_have_text("Реєстрація ментора на Baza Trainee Ukraine")
 
 
-def test_close_mw_ua(setup: Page) -> None:
+def test_close_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']")).to_be_visible()
     setup.locator("//button[@class='CloseBtn_btn__ij9AH RegistrationFormModal_closeButton__Wn1pT']").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']")).to_be_hidden()
 
 
-def test_chb_specialization_ua(setup: Page) -> None:
+def test_chb_specialization_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.locator("label").filter(has_text="UI/UX Designer").check()
     expect(setup.locator("label").filter(has_text="UI/UX Designer")).to_be_checked()
@@ -134,7 +134,7 @@ def test_chb_specialization_ua(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="Project Manager")).to_be_checked()
 
 
-def test_chb_consultation_ua(setup: Page) -> None:
+def test_chb_consultation_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.locator("label").filter(has_text="-15.00").check()
     expect(setup.locator("label").filter(has_text="-15.00")).to_be_checked()
@@ -146,7 +146,7 @@ def test_chb_consultation_ua(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="будь-який")).to_be_checked()
 
 
-def test_send_form_without_agreement_ua(setup: Page) -> None:
+def test_send_form_without_agreement_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
     setup.get_by_placeholder("Прізвище").type("Юніт тест юа")

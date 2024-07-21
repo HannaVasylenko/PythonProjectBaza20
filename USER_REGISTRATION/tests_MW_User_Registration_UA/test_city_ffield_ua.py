@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_citypr_space_ua(setup: Page) -> None:
+def test_city_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type(" ")
@@ -12,7 +12,7 @@ def test_citypr_space_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text("error mes")
 
 
-def test_citypr_empty_ua(setup: Page) -> None:
+def test_city_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").click()
@@ -20,7 +20,7 @@ def test_citypr_empty_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_1char_ua(setup: Page) -> None:
+def test_city_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("х")
@@ -30,7 +30,7 @@ def test_citypr_1char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text(">2char")
 
 
-def test_citypr_2char_ua(setup: Page) -> None:
+def test_city_2char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ха")
@@ -38,7 +38,7 @@ def test_citypr_2char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_3char_ua(setup: Page) -> None:
+def test_city_3char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("хар")
@@ -46,7 +46,7 @@ def test_citypr_3char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_15char_ua(setup: Page) -> None:
+def test_city_15char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХарківЛьвівСуми")
@@ -54,7 +54,7 @@ def test_citypr_15char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_29char_ua(setup: Page) -> None:
+def test_city_29char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХарківЛьвівСумиЧернігівЯворів")
@@ -62,7 +62,7 @@ def test_citypr_29char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_30char_ua(setup: Page) -> None:
+def test_city_30char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХарківЛьвівСумиЧернігівЯворівю")
@@ -70,7 +70,7 @@ def test_citypr_30char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_31char_ua(setup: Page) -> None:
+def test_city_31char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХарківЛьвівСумиЧернігівЯворівюа")
@@ -79,7 +79,7 @@ def test_citypr_31char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text("Назва міста повинна бути не більше 30 знаків")
 
 
-def test_citypr_50char_ua(setup: Page) -> None:
+def test_city_50char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХарківЛьвівСумиЧернігівЯворівШепетівкаЧорнобильРим")
@@ -88,7 +88,7 @@ def test_citypr_50char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text("Назва міста повинна бути не більше 30 знаків")
 
 
-def test_citypr_numbers_ua(setup: Page) -> None:
+def test_city_numbers_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("0123456789")
@@ -97,7 +97,7 @@ def test_citypr_numbers_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text("Введіть коректну назву міста")
 
 
-def test_citypr_hyphen_ua(setup: Page) -> None:
+def test_city_hyphen_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("Х-арків-Львів-Суми")
@@ -105,7 +105,7 @@ def test_citypr_hyphen_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_apostrophe_ua(setup: Page) -> None:
+def test_city_apostrophe_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("Х'арків'Львів'Суми")
@@ -113,7 +113,7 @@ def test_citypr_apostrophe_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_space_in_ua(setup: Page) -> None:
+def test_city_space_in_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("Харків Львів Суми")
@@ -121,7 +121,7 @@ def test_citypr_space_in_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_symbols_ua(setup: Page) -> None:
+def test_city_symbols_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("Х,ар.кі!вЛ?ьв@ів")
@@ -130,7 +130,7 @@ def test_citypr_symbols_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='city']/../following-sibling::p")).to_have_text("Введіть коректну назву міста")
 
 
-def test_citypr_latin_ua(setup: Page) -> None:
+def test_city_latin_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("Kharkiv")
@@ -138,7 +138,7 @@ def test_citypr_latin_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_up_case_ua(setup: Page) -> None:
+def test_city_up_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("ХАРКІВ")
@@ -146,7 +146,7 @@ def test_citypr_up_case_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_citypr_low_case_ua(setup: Page) -> None:
+def test_city_low_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").type("харків")
@@ -162,7 +162,7 @@ def test_citypr_low_case_ua(setup: Page) -> None:
     ("Тиитрэтьтор"),
     ("Иимпаётир")
 ])
-def test_piletterspr_ua(setup: Page, test_input) -> None:
+def test_piletters_user_reg_ua(setup: Page, test_input) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").press("Control+A")

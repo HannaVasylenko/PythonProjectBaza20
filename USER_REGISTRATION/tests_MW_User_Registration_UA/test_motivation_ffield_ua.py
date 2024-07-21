@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_motpr_empty_ua(setup: Page) -> None:
+def test_motivation_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").click()
@@ -12,7 +12,7 @@ def test_motpr_empty_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Вкажіть вашу мотивацію")
 
 
-def test_motpr_space_ua(setup: Page) -> None:
+def test_motivation_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type(" ")
@@ -21,7 +21,7 @@ def test_motpr_space_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Вкажіть вашу мотивацію")
 
 
-def test_motpr_1char_ua(setup: Page) -> None:
+def test_motivation_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("ї")
@@ -30,7 +30,7 @@ def test_motpr_1char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
 
-def test_motpr_2char_ua(setup: Page) -> None:
+def test_motivation_2char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їє")
@@ -38,7 +38,8 @@ def test_motpr_2char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m InputField__error__s2LFM")
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
-def test_motpr_5char_ua(setup: Page) -> None:
+
+def test_motivation_5char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їєабв")
@@ -46,7 +47,7 @@ def test_motpr_5char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
 
-def test_motpr_9char_ua(setup: Page) -> None:
+def test_motivation_9char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їєабвгійц")
@@ -55,7 +56,7 @@ def test_motpr_9char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
 
-def test_motpr_10char_ua(setup: Page) -> None:
+def test_motivation_10char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їєабвгійцв")
@@ -63,7 +64,7 @@ def test_motpr_10char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_11char_ua(setup: Page) -> None:
+def test_motivation_11char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їєабвгійцва")
@@ -71,7 +72,7 @@ def test_motpr_11char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_20char_ua(setup: Page) -> None:
+def test_motivation_20char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("йцукенгшщзфівапролдж")
@@ -79,7 +80,7 @@ def test_motpr_20char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_49char_ua(setup: Page) -> None:
+def test_motivation_49char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("йцукенгшщзхїфівапролджєячсмитьбюйцукенгшфівапролд")
@@ -87,7 +88,7 @@ def test_motpr_49char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_50char_ua(setup: Page) -> None:
+def test_motivation_50char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("йцукенгшщзхїфівапролджєячсмитьбюйцукенгшфівапролдз")
@@ -95,7 +96,7 @@ def test_motpr_50char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_51char_ua(setup: Page) -> None:
+def test_motivation_51char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("йцукенгшщзхїфівапролджєячсмитьбюйцукенгшфівапролдзв")
@@ -104,7 +105,7 @@ def test_motpr_51char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не більше 50 знаків")
 
 
-def test_motpr_70char_ua(setup: Page) -> None:
+def test_motivation_70char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("йцукенгшщзхїфівапролджєячсмитьбюйцукенгшфівапролдзйцукенгшщзфівапролдж")
@@ -113,7 +114,7 @@ def test_motpr_70char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("Текст має бути не більше 50 знаків")
 
 
-def test_motpr_symb1_ua(setup: Page) -> None:
+def test_motivation_symb1_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("С!-_().,<>&?@$=+{}#*/[\]")
@@ -121,7 +122,7 @@ def test_motpr_symb1_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_symb2_ua(setup: Page) -> None:
+def test_motivation_symb2_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("С|?%^:;`₴’’””<>&?@$=+*\[/]?%;:")
@@ -129,7 +130,7 @@ def test_motpr_symb2_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_num_ua(setup: Page) -> None:
+def test_motivation_numb_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("числа 1234567890")
@@ -137,7 +138,7 @@ def test_motpr_num_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_upcase_ua(setup: Page) -> None:
+def test_motivation_up_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("ТЕСТУВАННЯ")
@@ -145,7 +146,7 @@ def test_motpr_upcase_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_lowcase_ua(setup: Page) -> None:
+def test_motivation_low_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("тестування")
@@ -161,7 +162,7 @@ def test_motpr_lowcase_ua(setup: Page) -> None:
     ("Тиитрэтьтор"),
     ("Иимпаётир")
 ])
-def test_motpr_piletters_ua(setup: Page, test_input) -> None:
+def test_motivation_piletters_user_reg_ua(setup: Page, test_input) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").press("Control+A")

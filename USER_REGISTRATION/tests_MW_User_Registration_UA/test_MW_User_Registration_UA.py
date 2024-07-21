@@ -2,20 +2,20 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_close_mw(setup: Page) -> None:
+def test_close_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.locator("//button[@class='CloseBtn_btn__ij9AH RegistrationFormModal_closeButton__Wn1pT']").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']")).to_be_hidden()
 
 
-def test_title_mw(setup: Page) -> None:
+def test_title_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     expect(setup.locator("form h2")).to_have_text("Реєстрація на участь в проєкті Baza Trainee Ukraine")
 
 
-def test_select_specialization(setup: Page) -> None:
+def test_select_specialization_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.locator("label").filter(has_text="UI/UX Designer").check()
@@ -32,7 +32,7 @@ def test_select_specialization(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="Project Manager")).to_be_checked()
 
 
-def test_select_availability_of_experience(setup: Page) -> None:
+def test_select_availability_of_experience_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.locator("label").filter(has_text="Так").check()
@@ -41,7 +41,7 @@ def test_select_availability_of_experience(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="Ні")).to_be_checked()
 
 
-def test_select_questionnaire(setup: Page) -> None:
+def test_select_questionnaire_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").check()
@@ -56,7 +56,7 @@ def test_select_questionnaire(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="в пості на LinkedIn")).to_be_checked()
 
 
-def test_rules_BazaTrainee_project_mw(setup: Page) -> None:
+def test_rules_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_role("button", name="Читати тут").click()
@@ -65,7 +65,7 @@ def test_rules_BazaTrainee_project_mw(setup: Page) -> None:
     expect(setup.locator("//div[@class='ModalDocumentPdf_wrapper___sx__']")).to_be_hidden()
 
 
-def test_select_agreement(setup: Page) -> None:
+def test_select_agreement_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.locator("label").filter(has_text="Погоджуюсь").check()
@@ -74,7 +74,7 @@ def test_select_agreement(setup: Page) -> None:
     expect(setup.locator("label").filter(has_text="Надаю згоду на обробку персональних даних")).to_be_checked()
 
 
-def test_active_send_btn_mw(setup: Page) -> None:
+def test_active_send_btn_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Юніт тест юа")
@@ -96,7 +96,7 @@ def test_active_send_btn_mw(setup: Page) -> None:
     expect(setup.get_by_role("button", name="Відправити")).to_be_enabled()
 
 
-def test_send_form_mw(setup: Page) -> None:
+def test_send_form_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Юніт тест юа")
@@ -109,7 +109,7 @@ def test_send_form_mw(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("test")
     setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test")
     setup.locator("label").filter(has_text="Так").check()
-    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа") #min 5 char
+    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа")
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").check()
     setup.get_by_role("button", name="Читати тут").click()
     setup.locator("//button[@class='CloseBtn_btn__ij9AH ModalDocumentPdf_closeButton__eH4h7']").click()
@@ -119,7 +119,7 @@ def test_send_form_mw(setup: Page) -> None:
     expect(setup.locator("div").filter(has_text="Ваші дані успішно відправлено").nth(1)).to_be_visible()
 
 
-def test_send_form_without_last_mw(setup: Page) -> None:
+def test_send_form_without_last_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Юніт тест юа")
@@ -132,13 +132,13 @@ def test_send_form_without_last_mw(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("test")
     setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test")
     setup.locator("label").filter(has_text="Так").check()
-    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа") #min 5 char
+    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа")
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").check()
     setup.locator("label").filter(has_text="Погоджуюсь").check()
     expect(setup.get_by_role("button", name="Відправити")).to_be_disabled()
 
 
-def test_send_form_without_last2_mw(setup: Page) -> None:
+def test_send_form_without_last2_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Юніт тест юа")
@@ -151,13 +151,13 @@ def test_send_form_without_last2_mw(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("test")
     setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test")
     setup.locator("label").filter(has_text="Так").check()
-    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа") #min 5 char
+    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа")
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").check()
     setup.locator("label").filter(has_text="Надаю згоду на обробку персональних даних").check()
     expect(setup.get_by_role("button", name="Відправити")).to_be_disabled()
 
 
-def test_empty_form_mw(setup: Page) -> None:
+def test_empty_form_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").click()
@@ -172,7 +172,7 @@ def test_empty_form_mw(setup: Page) -> None:
     expect(setup.get_by_role("button", name="Відправити")).to_be_disabled()
 
 
-def test_send_without_checkbox_mw(setup: Page) -> None:
+def test_send_without_checkbox_mw_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Юніт тест юа")
@@ -183,6 +183,6 @@ def test_send_without_checkbox_mw(setup: Page) -> None:
     setup.get_by_placeholder("Україна").type("Юніт тест юа")
     setup.get_by_placeholder("Iм'я користувача в Discord").type("test")
     setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test")
-    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа") #min 5 char
+    setup.get_by_placeholder("Ваша відповідь").type("Юніт тест юа")
     expect(setup.get_by_role("button", name="Відправити")).to_be_disabled()
 

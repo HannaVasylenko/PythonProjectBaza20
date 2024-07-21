@@ -2,20 +2,20 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_close_mw(setup_en: Page) -> None:
+def test_close_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("//button[@class='CloseBtn_btn__ij9AH RegistrationFormModal_closeButton__Wn1pT']").click()
     expect(setup_en.locator(".RegistrationFormModal_wrapper__bgALB")).to_be_hidden()
 
 
-def test_title_mw(setup_en: Page) -> None:
+def test_title_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     expect(setup_en.locator("form h2")).to_have_text("Registration for participation in the Baza Trainee Ukraine project")
 
 
-def test_select_specialization(setup_en: Page) -> None:
+def test_select_specialization_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("label").filter(has_text="UI/UX Designer").check()
@@ -32,7 +32,7 @@ def test_select_specialization(setup_en: Page) -> None:
     expect(setup_en.locator("label").filter(has_text="Project Manager")).to_be_checked()
 
 
-def test_select_availability_of_experience(setup_en: Page) -> None:
+def test_select_availability_of_experience_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("label").filter(has_text="Yes").check()
@@ -41,7 +41,7 @@ def test_select_availability_of_experience(setup_en: Page) -> None:
     expect(setup_en.locator("label").filter(has_text="No")).to_be_checked()
 
 
-def test_select_questionnaire(setup_en: Page) -> None:
+def test_select_questionnaire_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("label").filter(has_text="On the Baza Trainee Ukraine").check()
@@ -56,7 +56,7 @@ def test_select_questionnaire(setup_en: Page) -> None:
     expect(setup_en.locator("label").filter(has_text="in a LinkedIn post")).to_be_checked()
 
 
-def test_rules_BazaTrainee_project_mw(setup_en: Page) -> None:
+def test_rules_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_role("button", name="Read here").click()
@@ -65,7 +65,7 @@ def test_rules_BazaTrainee_project_mw(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='ModalDocumentPdf_wrapper___sx__']")).to_be_hidden()
 
 
-def test_select_agreement(setup_en: Page) -> None:
+def test_select_agreement_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.locator("label").filter(has_text="I agree").check()
@@ -74,7 +74,7 @@ def test_select_agreement(setup_en: Page) -> None:
     expect(setup_en.locator("label").filter(has_text="I consent to the processing")).to_be_checked()
 
 
-def test_active_send_btn_mw(setup_en: Page) -> None:
+def test_active_send_btn_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").type("Test")
@@ -96,7 +96,7 @@ def test_active_send_btn_mw(setup_en: Page) -> None:
     expect(setup_en.get_by_role("button", name="Send")).to_be_enabled()
 
 
-def test_send_form_mw(setup_en: Page) -> None:
+def test_send_form_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").type("Test")
@@ -119,7 +119,7 @@ def test_send_form_mw(setup_en: Page) -> None:
     expect(setup_en.locator("div").filter(has_text="Your data has been sent").nth(1)).to_be_visible()
 
 
-def test_send_form_without_last_mw(setup_en: Page) -> None:
+def test_send_form_without_last_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").type("Test")
@@ -138,7 +138,7 @@ def test_send_form_without_last_mw(setup_en: Page) -> None:
     expect(setup_en.get_by_role("button", name="Send")).to_be_disabled()
 
 
-def test_send_form_without_last2_mw(setup_en: Page) -> None:
+def test_send_form_without_last2_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").type("Test")
@@ -157,7 +157,7 @@ def test_send_form_without_last2_mw(setup_en: Page) -> None:
     expect(setup_en.get_by_role("button", name="Send")).to_be_disabled()
 
 
-def test_empty_form_mw(setup_en: Page) -> None:
+def test_empty_form_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").click()
@@ -172,7 +172,7 @@ def test_empty_form_mw(setup_en: Page) -> None:
     expect(setup_en.get_by_role("button", name="Send")).to_be_disabled()
 
 
-def test_send_without_checkbox_mw(setup_en: Page) -> None:
+def test_send_without_checkbox_mw_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("First Name").type("Test")

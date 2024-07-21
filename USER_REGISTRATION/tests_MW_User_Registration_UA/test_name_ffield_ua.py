@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_namepr_1_char_ua(setup: Page) -> None:
+def test_name_1_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("ї")
@@ -12,7 +12,7 @@ def test_namepr_1_char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно мати не менше 2 знаків")
 
 
-def test_namepr_empty_field_ua(setup: Page) -> None:
+def test_name_empty_field_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").click()
@@ -21,7 +21,7 @@ def test_namepr_empty_field_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть своє ім’я")
 
 
-def test_namepr_2_char_ua(setup: Page) -> None:
+def test_name_2_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("їє")
@@ -29,7 +29,7 @@ def test_namepr_2_char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_3_char_ua(setup: Page) -> None:
+def test_name_3_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("їєа")
@@ -37,7 +37,7 @@ def test_namepr_3_char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_15_char_ua(setup: Page) -> None:
+def test_name_15_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Технікитестдиза")
@@ -45,7 +45,7 @@ def test_namepr_15_char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_29_char_ua(setup: Page) -> None:
+def test_name_29_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклісти")
@@ -53,7 +53,7 @@ def test_namepr_29_char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_30_char_ua(setup: Page) -> None:
+def test_name_30_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну чеклістів")
@@ -61,7 +61,7 @@ def test_namepr_30_char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_31_char_ua(setup: Page) -> None:
+def test_name_31_char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Техніки тестдизайну чеклістівюа")
@@ -70,7 +70,7 @@ def test_namepr_31_char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
 
 
-def test_namepr_50_cha_ua(setup: Page) -> None:
+def test_name_50_cha_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Технікитестдизайну чеклисти дефектрепортитесткейси")
@@ -79,7 +79,7 @@ def test_namepr_50_cha_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Ім’я повинно бути не більше 30 знаків")
 
 
-def test_namepr_apostrophe_ua(setup: Page) -> None:
+def test_name_apostrophe_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Т'ехніки'тест'дизайну")
@@ -87,7 +87,7 @@ def test_namepr_apostrophe_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_hyphen_ua(setup: Page) -> None:
+def test_name_hyphen_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Т-ехніки-тест-дизайну")
@@ -95,7 +95,7 @@ def test_namepr_hyphen_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_space_in_ua(setup: Page) -> None:
+def test_name_space_in_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Техніки тест дизайну")
@@ -103,7 +103,7 @@ def test_namepr_space_in_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_low_case_ua(setup: Page) -> None:
+def test_name_low_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("технікитестдизайну")
@@ -111,7 +111,7 @@ def test_namepr_low_case_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_up_case_ua(setup: Page) -> None:
+def test_name_up_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("ТЕСТУВАННЯ")
@@ -119,7 +119,7 @@ def test_namepr_up_case_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='firstName']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_namepr_numbers_ua(setup: Page) -> None:
+def test_name_numbers_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Технікитестдизайну1234567890")
@@ -128,7 +128,7 @@ def test_namepr_numbers_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
 
-def test_namepr_symbols_ua(setup: Page) -> None:
+def test_name_symbols_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type("Т,е.хн?іки!те@ст")
@@ -145,7 +145,7 @@ def test_namepr_symbols_ua(setup: Page) -> None:
     ("Тиитрэтьтор"),
     ("Иимпаётир")
 ])
-def test_namepr_piletters_ua(setup: Page, test_input) -> None:
+def test_name_piletters_user_reg_ua(setup: Page, test_input) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").press("Control+A")
@@ -156,7 +156,7 @@ def test_namepr_piletters_ua(setup: Page, test_input) -> None:
     expect(setup.locator("//label[@for='firstName']/../following-sibling::p")).to_have_text("Введіть коректне ім’я")
 
 
-def test_namepr_only_space_ua(setup: Page) -> None:
+def test_name_only_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ім’я").type(" ")

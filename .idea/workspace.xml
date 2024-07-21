@@ -4,8 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited tests in Mentor form">
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited tests in User registration form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" afterDir="false" />
@@ -928,7 +961,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721421005999</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Edited tests in User registration form">
+      <option name="closed" value="true" />
+      <created>1721493967779</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721493967779</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -963,6 +1004,7 @@
     <MESSAGE value="Refactoring. Added setup for different locales. Edited the tests" />
     <MESSAGE value="Edited tests in the Feedback form" />
     <MESSAGE value="Edited tests in Mentor form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited tests in Mentor form" />
+    <MESSAGE value="Edited tests in User registration form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited tests in User registration form" />
   </component>
 </project>

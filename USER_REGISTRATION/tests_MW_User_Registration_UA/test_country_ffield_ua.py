@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-def test_countrypr_space_ua(setup: Page) -> None:
+def test_country_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type(" ")
@@ -12,7 +12,7 @@ def test_countrypr_space_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Введіть коректну назву країни")
 
     
-def test_countrypr_empty_ua(setup: Page) -> None:
+def test_country_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").click()
@@ -20,7 +20,7 @@ def test_countrypr_empty_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_1char_ua(setup: Page) -> None:
+def test_country_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("х")
@@ -30,7 +30,7 @@ def test_countrypr_1char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_2char_ua(setup: Page) -> None:
+def test_country_2char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ха")
@@ -40,7 +40,7 @@ def test_countrypr_2char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_3char_ua(setup: Page) -> None:
+def test_country_3char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("хар")
@@ -50,7 +50,7 @@ def test_countrypr_3char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_4char_ua(setup: Page) -> None:
+def test_country_4char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("харк")
@@ -58,7 +58,7 @@ def test_countrypr_4char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_5char_ua(setup: Page) -> None:
+def test_country_5char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("харкі")
@@ -66,7 +66,7 @@ def test_countrypr_5char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_15char_ua(setup: Page) -> None:
+def test_country_15char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХарківЛьвівСуми")
@@ -74,7 +74,7 @@ def test_countrypr_15char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_29char_ua(setup: Page) -> None:
+def test_country_29char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХарківЛьвівСумиЧернігівЯворів")
@@ -82,7 +82,7 @@ def test_countrypr_29char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_30char_ua(setup: Page) -> None:
+def test_country_30char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХарківЛьвівСумиЧернігівЯворівю")
@@ -90,7 +90,7 @@ def test_countrypr_30char_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_31char_ua(setup: Page) -> None:
+def test_country_31char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХарківЛьвівСумиЧернігівЯворівюа")
@@ -99,7 +99,7 @@ def test_countrypr_31char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Назва країни повинна бути не більше 30 знаків")
 
 
-def test_countrypr_50char_ua(setup: Page) -> None:
+def test_country_50char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХарківЛьвівСумиЧернігівЯворівШепетівкаЧорнобильРим")
@@ -108,7 +108,7 @@ def test_countrypr_50char_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Назва країни повинна бути не більше 30 знаків")
 
 
-def test_countrypr_numbers_ua(setup: Page) -> None:
+def test_country_numbers_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("1234567890")
@@ -117,7 +117,7 @@ def test_countrypr_numbers_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Введіть коректну назву країни")
 
 
-def test_countrypr_hyphen_ua(setup: Page) -> None:
+def test_country_hyphen_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("Х-арків-Львів-Чернівці")
@@ -125,7 +125,7 @@ def test_countrypr_hyphen_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_apostrophe_ua(setup: Page) -> None:
+def test_country_apostrophe_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("Х'арків'Львів'Чернівці")
@@ -133,7 +133,7 @@ def test_countrypr_apostrophe_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_space_in_ua(setup: Page) -> None:
+def test_country_space_in_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("Харків Львів Суми")
@@ -141,7 +141,7 @@ def test_countrypr_space_in_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_symbols_ua(setup: Page) -> None:
+def test_country_symbols_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("Х.а,рк!ів@Льв?ів")
@@ -150,7 +150,7 @@ def test_countrypr_symbols_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Введіть коректну назву країни")
 
 
-def test_countrypr_latin_ua(setup: Page) -> None:
+def test_country_latin_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("Kharkiv")
@@ -158,7 +158,7 @@ def test_countrypr_latin_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_upcase_ua(setup: Page) -> None:
+def test_country_up_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("ХАРКІВЛЬВІВ")
@@ -166,7 +166,7 @@ def test_countrypr_upcase_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_lowcase_ua(setup: Page) -> None:
+def test_country_low_case_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").type("харківльвів")
@@ -182,7 +182,7 @@ def test_countrypr_lowcase_ua(setup: Page) -> None:
     ("Тиитрэтьтор"),
     ("Иимпаётир")
 ])
-def test_countrypr_piletters_ua(setup: Page, test_input) -> None:
+def test_country_piletters_user_reg_ua(setup: Page, test_input) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").press("Control+A")

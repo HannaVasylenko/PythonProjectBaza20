@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_country_space(setup_en: Page) -> None:
+def test_country_space_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type(" ")
@@ -11,7 +11,7 @@ def test_country_space(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Enter the correct country name")
 
 
-def test_countrypr_empty_en(setup_en: Page) -> None:
+def test_country_empty_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").click()
@@ -19,7 +19,7 @@ def test_countrypr_empty_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_1char(setup_en: Page) -> None:
+def test_country_1char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("u")
@@ -29,7 +29,7 @@ def test_country_1char(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_country_2char(setup_en: Page) -> None:
+def test_country_2char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("uk")
@@ -39,7 +39,7 @@ def test_country_2char(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_country_3char(setup_en: Page) -> None:
+def test_country_3char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("ukr")
@@ -49,7 +49,7 @@ def test_country_3char(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_country_4char(setup_en: Page) -> None:
+def test_country_4char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("ukra")
@@ -57,7 +57,7 @@ def test_country_4char(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_5char(setup_en: Page) -> None:
+def test_country_5char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("ukrai")
@@ -65,7 +65,7 @@ def test_country_5char(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_15char(setup_en: Page) -> None:
+def test_country_15char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("KharkivLvivSumy")
@@ -73,7 +73,7 @@ def test_country_15char(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_29char(setup_en: Page) -> None:
+def test_country_29char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("qwertyuiopasdfghjklqqawsedrft")
@@ -81,7 +81,7 @@ def test_country_29char(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_30char(setup_en: Page) -> None:
+def test_country_30char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("qwertyuiopasdfghjklqqawsedrftq")
@@ -89,7 +89,7 @@ def test_country_30char(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_31char(setup_en: Page) -> None:
+def test_country_31char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("qwertyuiopasdfghjklqqawsedrftqa")
@@ -98,7 +98,7 @@ def test_country_31char(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("The name of the country should not exceed 30 characters")
 
 
-def test_country_50char(setup_en: Page) -> None:
+def test_country_50char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklq")
@@ -107,7 +107,7 @@ def test_country_50char(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("The name of the country should not exceed 30 characters")
 
 
-def test_country_numbers(setup_en: Page) -> None:
+def test_country_numbers_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("1234567890")
@@ -116,7 +116,7 @@ def test_country_numbers(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Enter the correct country name")
 
 
-def test_country_hyphen(setup_en: Page) -> None:
+def test_country_hyphen_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("K-harkiv-Lviv-Sumy")
@@ -124,7 +124,7 @@ def test_country_hyphen(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_apostrophe(setup_en: Page) -> None:
+def test_country_apostrophe_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("K'harkiv'Lviv'Sumy")
@@ -132,7 +132,7 @@ def test_country_apostrophe(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_space_in(setup_en: Page) -> None:
+def test_country_space_in_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("Kharkiv Lviv Sumy")
@@ -140,7 +140,7 @@ def test_country_space_in(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_country_symbols(setup_en: Page) -> None:
+def test_country_symbols_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("Kh@rk!vLv#v?umy")
@@ -149,7 +149,7 @@ def test_country_symbols(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Enter the correct country name")
 
 
-def test_country_сyrillic(setup_en: Page) -> None:
+def test_country_cyrillic_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("Україна")
@@ -157,7 +157,7 @@ def test_country_сyrillic(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_upcase_en(setup_en: Page) -> None:
+def test_country_up_case_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("KHARKIV")
@@ -165,7 +165,7 @@ def test_countrypr_upcase_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_lowcase_en(setup_en: Page) -> None:
+def test_country_low_case_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Ukraine").type("kharkiv")

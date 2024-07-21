@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_countrypr_space_pl(setup_pl: Page) -> None:
+def test_country_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type(" ")
@@ -11,7 +11,7 @@ def test_countrypr_space_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju") #no error mes
 
 
-def test_countrypr_empty_pl(setup_pl: Page) -> None:
+def test_country_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").click()
@@ -19,7 +19,7 @@ def test_countrypr_empty_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_1char_pl(setup_pl: Page) -> None:
+def test_country_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ę")
@@ -29,7 +29,7 @@ def test_countrypr_1char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_2char_pl(setup_pl: Page) -> None:
+def test_country_2char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ęł")
@@ -39,7 +39,7 @@ def test_countrypr_2char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_3char_pl(setup_pl: Page) -> None:
+def test_country_3char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ęłŻ")
@@ -49,7 +49,7 @@ def test_countrypr_3char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("error mes >4char")
 
 
-def test_countrypr_4char_pl(setup_pl: Page) -> None:
+def test_country_4char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ęłŻó")
@@ -57,7 +57,7 @@ def test_countrypr_4char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_5char_pl(setup_pl: Page) -> None:
+def test_country_5char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ęłŻóż")
@@ -65,7 +65,7 @@ def test_countrypr_5char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_15char_pl(setup_pl: Page) -> None:
+def test_country_15char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ŚwiętosławJózef")
@@ -73,7 +73,7 @@ def test_countrypr_15char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_29char_pl(setup_pl: Page) -> None:
+def test_country_29char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("AndrzejŚwiętosławLasławŁukasz")
@@ -81,7 +81,7 @@ def test_countrypr_29char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_30char_pl(setup_pl: Page) -> None:
+def test_country_30char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("Andrzej ŚwiętosławLasławŁukasz")
@@ -89,7 +89,7 @@ def test_countrypr_30char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_31char_pl(setup_pl: Page) -> None:
+def test_country_31char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("Andrzej Świętosław LasławŁukasz")
@@ -98,7 +98,7 @@ def test_countrypr_31char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Nazwa kraju nie powinna przekraczać 30 znaków")
 
 
-def test_countrypr_50char_pl(setup_pl: Page) -> None:
+def test_country_50char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("AndrzejŚwiętosławLasławŁukaszBożenaJózefŚwiętosław")
@@ -107,7 +107,7 @@ def test_countrypr_50char_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Nazwa kraju nie powinna przekraczać 30 znaków")
 
 
-def test_countrypr_numbers_pl(setup_pl: Page) -> None:
+def test_country_numbers_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("1234567890")
@@ -116,7 +116,7 @@ def test_countrypr_numbers_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
 
 
-def test_countrypr_hyphen_pl(setup_pl: Page) -> None:
+def test_country_hyphen_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("B-ożena-Józef-Świętosław")
@@ -124,7 +124,7 @@ def test_countrypr_hyphen_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_apostrophe_pl(setup_pl: Page) -> None:
+def test_country_apostrophe_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("B'ożena'Józef'Świętosła'w")
@@ -132,7 +132,7 @@ def test_countrypr_apostrophe_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_space_in_pl(setup_pl: Page) -> None:
+def test_country_space_in_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("Bożena Józef Świętosław")
@@ -140,7 +140,7 @@ def test_countrypr_space_in_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_symbols_pl(setup_pl: Page) -> None:
+def test_country_symbols_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("B@oż?ena.Józef,Świętosław")
@@ -149,7 +149,7 @@ def test_countrypr_symbols_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='country']/../following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
 
 
-def test_countrypr_сyrillic_pl(setup_pl: Page) -> None:
+def test_country_cyrillic_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("Україна")
@@ -157,7 +157,7 @@ def test_countrypr_сyrillic_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_latin_pl(setup_pl: Page) -> None:
+def test_country_latin_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("Ukraine")
@@ -165,7 +165,7 @@ def test_countrypr_latin_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_upcase_pl(setup_pl: Page) -> None:
+def test_country_up_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("ŁŚABCDE")
@@ -173,7 +173,7 @@ def test_countrypr_upcase_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_countrypr_lowcase_pl(setup_pl: Page) -> None:
+def test_country_low_case_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").type("żśćóżęł")

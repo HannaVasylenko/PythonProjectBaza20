@@ -2,7 +2,7 @@ import re
 from playwright.sync_api import Page, expect
 
 
-def test_motpr_empty_en(setup_en: Page) -> None:
+def test_motivation_empty_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").click()
@@ -11,7 +11,7 @@ def test_motpr_empty_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("State your motivation")
 
 
-def test_motpr_space_en(setup_en: Page) -> None:
+def test_motivation_space_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type(" ")
@@ -20,7 +20,7 @@ def test_motpr_space_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("State your motivation")
 
 
-def test_motpr_1char_en(setup_en: Page) -> None:
+def test_motivation_1char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("t")
@@ -30,7 +30,7 @@ def test_motpr_1char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("error mes <10>")
 
 
-def test_motpr_2char_en(setup_en: Page) -> None:
+def test_motivation_2char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("te")
@@ -40,7 +40,7 @@ def test_motpr_2char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("error mes <10>")
 
 
-def test_motpr_5char_en(setup_en: Page) -> None:
+def test_motivation_5char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testi")
@@ -50,7 +50,7 @@ def test_motpr_5char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("error mes <10>")
 
 
-def test_motpr_9char_en(setup_en: Page) -> None:
+def test_motivation_9char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testiasdf")
@@ -60,7 +60,7 @@ def test_motpr_9char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("error mes <10>")
 
 
-def test_motpr_10char_en(setup_en: Page) -> None:
+def test_motivation_10char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testingasd")
@@ -68,7 +68,7 @@ def test_motpr_10char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_11char_en(setup_en: Page) -> None:
+def test_motivation_11char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testiasdfas")
@@ -76,7 +76,7 @@ def test_motpr_11char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class","InputField_input___Wj0m")
 
 
-def test_motpr_20char_en(setup_en: Page) -> None:
+def test_motivation_20char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("qwertyuiopasdfghjklq")
@@ -84,7 +84,7 @@ def test_motpr_20char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_49char_en(setup_en: Page) -> None:
+def test_motivation_49char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjkl")
@@ -92,7 +92,7 @@ def test_motpr_49char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_50char_en(setup_en: Page) -> None:
+def test_motivation_50char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklq")
@@ -100,7 +100,7 @@ def test_motpr_50char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_51char_en(setup_en: Page) -> None:
+def test_motivation_51char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklqr")
@@ -109,7 +109,7 @@ def test_motpr_51char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("The text should not exceed 50 characters")
 
 
-def test_motpr_70char_en(setup_en: Page) -> None:
+def test_motivation_70char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklqqwertyuiopasdfghjklp")
@@ -118,7 +118,7 @@ def test_motpr_70char_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/../following-sibling::p")).to_have_text("The text should not exceed 50 characters")
 
 
-def test_motpr_symb1_en(setup_en: Page) -> None:
+def test_motivation_symb1_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("s!-_().,<>&?@$=+{}#*/[\]")
@@ -126,7 +126,7 @@ def test_motpr_symb1_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
     
-def test_motpr_symb2_en(setup_en: Page) -> None:
+def test_motivation_symb2_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("s|?%^:;`₴’’””<>&?@$=+*\[/]?%;:")
@@ -134,7 +134,7 @@ def test_motpr_symb2_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_num_en(setup_en: Page) -> None:
+def test_motivation_numb_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("num1234567890")
@@ -142,7 +142,7 @@ def test_motpr_num_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_upcase_en(setup_en: Page) -> None:
+def test_motivation_up_case_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("TESTING")
@@ -150,7 +150,7 @@ def test_motpr_upcase_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input___Wj0m")
 
 
-def test_motpr_lowcase_en(setup_en: Page) -> None:
+def test_motivation_low_case_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testing")
