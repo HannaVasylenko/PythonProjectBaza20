@@ -22,8 +22,8 @@ def screenshot_after_test(request, setup: Page):
 def setup_en(page: Page) -> Page:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
-    page.get_by_text("EN").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+    page.get_by_text("EN", exact=True).click()
+    page.locator("//button[contains(@class, 'CloseBtn_btn__ij9AH') and contains(@class, 'CookiesModal_close__tvIj3')]/child::*").click()
     yield page
 
 
@@ -31,7 +31,7 @@ def setup_en(page: Page) -> Page:
 def setup_pl(page: Page) -> Page:
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
-    page.get_by_text("PL").click()
-    page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
+    page.get_by_text("PL", exact=True).click()
+    page.locator("//button[contains(@class, 'CloseBtn_btn__ij9AH') and contains(@class, 'CookiesModal_close__tvIj3')]/child::*").click()
     yield page
 

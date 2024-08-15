@@ -4,1278 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited test names in forms">
-      <change afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/test_name_empty_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_active_send_btn_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_consultation_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_consultation_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_consultation_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_specialization_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_specialization_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_chb_specialization_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_15char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_15char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_15char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_1char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_29char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_29char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_29char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_2char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_2char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_30char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_30char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_30char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_31char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_31char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_31char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_3char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_3char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_3char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_50char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_50char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_apostrophe_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_apostrophe_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_apostrophe_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_hyphen_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_hyphen_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_hyphen_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_in_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_in_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_in_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_city_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_success_mw_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_success_mw_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_close_success_mw_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_15char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_15char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_15char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_1char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_29char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_29char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_29char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_2char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_2char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_30char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_30char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_30char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_31char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_31char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_31char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_3char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_3char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_3char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_4char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_4char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_4char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_50char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_50char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_5char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_5char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_5char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_apostrophe_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_apostrophe_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_apostrophe_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_hyphen_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_hyphen_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_hyphen_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_piletters_user_reg_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_in_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_in_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_in_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_country_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_default_send_btn_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_default_send_btn_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_default_send_btn_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_disabled_send_btn_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_disabled_send_btn_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_disabled_send_btn_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_17char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_31char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_32char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_33char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_3char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_begin_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_begin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_begin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_cyrillic_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_low_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_low_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_low_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_point_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_polski_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_polski_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_in_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_start_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_start_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_start_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_underline_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_discord_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_1char_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_25char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_25char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_25char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_2char_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_35char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_3char_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_49char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_51char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_55char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_56char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_70char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_cyrillic_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_hyphen_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot1_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_incorrect_dot2_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_num_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_num_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_num_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_num_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_numb_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_symb_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_symb_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_only_symbols_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_point_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_polski_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_polski_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_polski_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_space_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_symb_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_underline_in_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_up_case_in_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_up_case_in_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_up_case_in_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_1char_in_first_domain_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2_dots_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_2char_in_first_domain_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_by_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot1_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot1_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot1_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot2_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot2_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_incorrect_dot2_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_low_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_low_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_low_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_ru_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_with_up_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_dot_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_first_domain_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_email_without_name_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_empty_form_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_active_send_btn_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_active_send_btn_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_active_send_btn_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_default_send_btn_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_default_send_btn_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_default_send_btn_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_disabled_send_btn_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_disabled_send_btn_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_disabled_send_btn_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_hover_send_btn_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_hover_send_btn_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_hover_send_btn_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_mandatory_fields_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_mandatory_fields_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_mandatory_fields_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_placeholders_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_placeholders_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_placeholders_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_send_form_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_send_form_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_send_form_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_title_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_title_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ff_title_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_hover_send_btn_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_hover_send_btn_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_hover_send_btn_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_cyrillic_in_username_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_cyrillic_in_username_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_cyrillic_in_username_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_cyrillic_in_username_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_cyrillic_in_username_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_lnpart_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_num_in_username_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_num_in_username_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_num_in_username_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numb_in_username_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numbers_in_user_name_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_username_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_username_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_username_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_valid_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_ln_without_http_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_low_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_10char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_10char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_10char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_11char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_11char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_11char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_150char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_150char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_150char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_1char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_1char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_1char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_299char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_299char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_299char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_2char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_2char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_2char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_300char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_300char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_300char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_301char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_301char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_301char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_5char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_5char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_5char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_9char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_9char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_9char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_empty_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_empty_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_empty_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_low_case_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_low_case_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_low_case_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_numb_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_numb_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_numb_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440/u0439/u0446/u0443/u043a/u0435/u043d/u0433].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440/u0439/u0446/u0443/u043a/u0435/u043d].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442/u0444/u0456/u0432/u0430/u043f/u0440/u0443].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440/u0439/u0446/u0443/u043a/u0435/u043d/u0433].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440/u0439/u0446/u0443/u043a/u0435/u043d/u0433].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_piletters_fform_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430/u0439/u0446/u0443/u043a/u0435/u043d/u0433].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_space_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_space_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_space_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_symb_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_symb_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_symb_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_up_case_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_up_case_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_message_up_case_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_10char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_10char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_10char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_11char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_11char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_11char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_1char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_20char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_20char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_20char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_2char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_2char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_49char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_49char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_49char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_50char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_50char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_51char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_51char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_51char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_5char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_5char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_5char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_70char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_70char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_70char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_9char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_9char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_9char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_empty_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_empty_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_empty_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_num_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_numb_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_numb_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_piletters_user_reg_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb1_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb1_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb1_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb2_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb2_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_symb2_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_motivation_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_15char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_29char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_2char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_30char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_31char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3_char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_3char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50_cha_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_50char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_apostrophe_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_cyrillic_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_cyrillic_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_cyrillic_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_cyrillic_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_field_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_field_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_field_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_html_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_html_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_html_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_hyphen_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_latin_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_latin_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_latin_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_latin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_only_space_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_only_spce_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_only_spce_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_fform_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_mentor_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_piletters_user_reg_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_polski_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_in_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_in_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_in_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_in_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_space_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symb_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symb_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symb_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbol_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbols_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbols_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbols_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_fform_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_fform_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_fform_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_name_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_numb_in_username_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_12char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_13char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_14char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_20char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_6char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_cyrillic_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_field_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_field_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_field_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_digits_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_digits_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_digits_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_numb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_numb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_numb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_value_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_value_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_enter_value_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_cyrillic_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_cyrillic_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_cyrillic_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_latin_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_latin_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_latin_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_polski_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_only_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_polski_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_polski_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_space__user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_space_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_space_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_valid_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_with_begin_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_with_begin_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_with_begin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_begin_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_begin_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_begin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_start_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_start_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_phone_without_start_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_piletters_user_reg_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_rules_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_rules_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_rules_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_agreement_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_agreement_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_agreement_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_availability_of_experience_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_availability_of_experience_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_availability_of_experience_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_questionnaire_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_questionnaire_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_questionnaire_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_specialization_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_specialization_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_select_specialization_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_agreement_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_agreement_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_agreement_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_checkbox_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last2_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last2_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last2_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_form_without_last_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_without_checkbox_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_send_without_checkbox_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_space_in_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_1char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_25char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_2char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_3char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_49char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_50char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_51char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_70_char_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_70_char_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_70char_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_76char_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_76char_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_76char_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_apostrophe_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_cyrillic_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_cyrillic_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_field_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_field_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_field_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_empty_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_hyphen_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_latin_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_low_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_low_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_low_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_low_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_low_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numb_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numb_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numb_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numbers_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numbers_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_numbers_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_only_spce_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_only_spce_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_only_spce_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_mentor_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u0418/u0438/u043c/u043f/u0430/u0451/u0442/u0438/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u041e/u0440/u0430/u043c/u044b/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u041f/u0440/u044a/u0435/u0440/u043f/u043b/u0440/u0442].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u0422/u0438/u0438/u0442/u0440/u044d/u0442/u044c/u0442/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u0430/u043f/u043c/u042d/u0442/u0438/u043e/u0440].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_piletters_user_reg_ua[chromium-/u043f/u043e/u0442/u043b/u043e/u0401/u044c/u0442/u0431/u043e/u0430].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_in_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_in_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_in_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_in_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_in_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_space_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_symbols_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_up_case_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_up_case_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_up_case_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_up_case_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_surname_up_case_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_user_reg_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_user_reg_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_title_mw_user_reg_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_up_case_mentor_ua[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_without_checkbox_mw_mentor_en[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_without_checkbox_mw_mentor_pl[chromium].png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_scr/test_without_checkbox_mw_mentor_ua[chromium].png" afterDir="false" />
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Restarted the tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_discord_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_discord_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_email_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_email_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_motivation_ffield_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_motivation_ffield_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_name_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_name_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_phone_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_phone_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_surname_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_surname_field_en.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_email_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_email_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_name_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_name_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_phone_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_phone_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_surname_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_surname_field_pl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_MW_User_Registration_UA.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_MW_User_Registration_UA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_discord_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_discord_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_email_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_email_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_phone_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_phone_ffield_ua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_EN/test_email_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_EN/test_feedback_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_EN/test_message_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_EN/test_name_form_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_PL/test_email_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_PL/test_feedback_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_PL/test_message_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_fieldff_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_PL/test_name_form_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_email_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_feedback_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_message_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_field_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_name_form_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/test_name_empty_fform_ua[chromium].png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/test_name_empty_fform_ua[chromium].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_MW_Mentors_Registration_EN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_discord_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_email_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_linkedin_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_name_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_phone_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_surname_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_MW_Mentors_Registration_PL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_discord_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_email_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_linkedin_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_name_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_phone_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_surname_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_MW_Mentors_Registration_UA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_discord_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_email_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_linkedin_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_name_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_phone_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_surname_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_MW_User_Registration_ENG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_city_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_country_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_discord_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_discord_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_email_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_email_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_linkedin_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_motivation_ffield_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_motivation_ffield_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_name_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_name_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_phone_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_phone_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_surname_field_en.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_surname_field_en.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_MW_User_Registration_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_MW_User_Registration_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_email_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_email_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_name_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_name_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_phone_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_phone_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_surname_field_pl.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_surname_field_pl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_MW_User_Registration_UA.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_MW_User_Registration_UA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_city_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_country_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_discord_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_discord_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_email_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_email_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_linkedin_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_motivation_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_name_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_phone_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_phone_ffield_ua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_surname_ffield_ua.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1339,6 +135,7 @@
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_hover_sendbtn_ua.executor": "Run",
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_mandatory_fields_mw_ua.executor": "Run",
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_send_form.executor": "Run",
+    "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_send_form_mentor_ua.executor": "Run",
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_send_form_without_agreement_ua.executor": "Run",
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_title_mw_ua.executor": "Run",
     "Python tests.Python tests for test_MW_Mentors_Registration_UA.test_without_checkbox_mw_ua.executor": "Run",
@@ -1372,6 +169,8 @@
     "Python tests.Python tests for test_MW_User_Registration_pl.test_send_form_without_last2_mw_pl.executor": "Run",
     "Python tests.Python tests for test_MW_User_Registration_pl.test_send_form_without_last_mw_pl.executor": "Run",
     "Python tests.Python tests for test_MW_User_Registration_pl.test_title_mw_pl.executor": "Run",
+    "Python tests.Python tests for test_city_ffield_ua.test_city_apostrophe_user_reg_ua.executor": "Run",
+    "Python tests.Python tests for test_city_ffield_ua.test_city_hyphen_user_reg_ua.executor": "Run",
     "Python tests.Python tests for test_city_ffield_ua.test_citypr_hyphen_ua.executor": "Run",
     "Python tests.Python tests for test_city_ffield_ua.test_citypr_space_ua.executor": "Run",
     "Python tests.Python tests for test_city_ffield_ua.test_piletterspr1_ua.executor": "Run",
@@ -1393,6 +192,7 @@
     "Python tests.Python tests for test_city_field.test_city_symbols.executor": "Run",
     "Python tests.Python tests for test_city_field.test_city_сyrillic.executor": "Run",
     "Python tests.Python tests for test_city_field.test_citypr_hyphen_en.executor": "Run",
+    "Python tests.Python tests for test_city_field_en.test_city_hyphen_user_reg_en.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_15char_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_1char_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_29char_pl.executor": "Run",
@@ -1403,12 +203,14 @@
     "Python tests.Python tests for test_city_field_pl.test_city_50char_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_apostrophe_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_hyphen_pl.executor": "Run",
+    "Python tests.Python tests for test_city_field_pl.test_city_hyphen_user_reg_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_numbers_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_space_in_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_space_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_symbols_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_city_сyrillic_pl.executor": "Run",
     "Python tests.Python tests for test_city_field_pl.test_citypr_hyphen_pl.executor": "Run",
+    "Python tests.Python tests for test_country_ffield_ua.test_country_hyphen_user_reg_ua.executor": "Run",
     "Python tests.Python tests for test_country_ffield_ua.test_countrypr_31char_ua.executor": "Run",
     "Python tests.Python tests for test_country_ffield_ua.test_countrypr_50char_ua.executor": "Run",
     "Python tests.Python tests for test_country_ffield_ua.test_countrypr_piletters_ua.executor": "Run",
@@ -1430,6 +232,7 @@
     "Python tests.Python tests for test_country_field.test_country_space_in.executor": "Run",
     "Python tests.Python tests for test_country_field.test_country_symbols.executor": "Run",
     "Python tests.Python tests for test_country_field.test_country_сyrillic.executor": "Run",
+    "Python tests.Python tests for test_country_field_en.test_country_hyphen_user_reg_en.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_15char_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_1char_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_29char_pl.executor": "Run",
@@ -1442,6 +245,7 @@
     "Python tests.Python tests for test_country_field_pl.test_country_5char_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_apostrophe_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_hyphen_pl.executor": "Run",
+    "Python tests.Python tests for test_country_field_pl.test_country_hyphen_user_reg_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_latin_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_numbers_pl.executor": "Run",
     "Python tests.Python tests for test_country_field_pl.test_country_space_in_pl.executor": "Run",
@@ -1609,6 +413,8 @@
     "Python tests.Python tests for test_email_field_ua.test_email_without_namef_ua.executor": "Run",
     "Python tests.Python tests for test_email_field_ua.test_email_сyrillic_in_namef_ua.executor": "Run",
     "Python tests.Python tests for test_email_fieldff_pl.test_email_сyrillic_in_namef_pl.executor": "Run",
+    "Python tests.Python tests for test_email_form_pl.test_email_symb_in_name_fform_pl.executor": "Run",
+    "Python tests.Python tests for test_email_form_pl.test_email_with_by_fform_pl.executor": "Run",
     "Python tests.Python tests for test_email_pl.test_email_56char_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_pl.test_email_polski_in_name_pl.executor": "Run",
     "Python tests.Python tests for test_email_ua.test_email_1char_in_name_ua.executor": "Run",
@@ -1646,6 +452,7 @@
     "Python tests.Python tests for test_feedback_form_ua.test_ff_mandatory_fields.executor": "Run",
     "Python tests.Python tests for test_feedback_form_ua.test_ff_placeholders_fields.executor": "Run",
     "Python tests.Python tests for test_feedback_form_ua.test_ff_title_fields.executor": "Run",
+    "Python tests.Python tests for test_feedback_form_ua.test_ff_title_ua.executor": "Run",
     "Python tests.Python tests for test_linkedin_en.test_ln_point_in_username_en.executor": "Run",
     "Python tests.Python tests for test_linkedin_en.test_ln_space_in_username_en.executor": "Run",
     "Python tests.Python tests for test_linkedin_en.test_ln_symb_in_username_en.executor": "Run",
@@ -1705,6 +512,8 @@
     "Python tests.Python tests for test_message_field_ua.test_message_space_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_symb_fieldf_ua.executor": "Run",
     "Python tests.Python tests for test_message_field_ua.test_message_up_low_case_fieldf_ua.executor": "Run",
+    "Python tests.Python tests for test_message_form_ua.test_message_10char_fform_ua.executor": "Run",
+    "Python tests.Python tests for test_message_form_ua.test_message_11char_fform_ua.executor": "Run",
     "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_empty_ua.executor": "Run",
     "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletters_ua.executor": "Run",
     "Python tests.Python tests for test_motivation_ffield_ua.test_motpr_piletterspr_ua.executor": "Run",
@@ -1712,6 +521,7 @@
     "Python tests.Python tests for test_name.test_name_only_spce.executor": "Run",
     "Python tests.Python tests for test_name.test_name_space.executor": "Run",
     "Python tests.Python tests for test_name_en.test_name_empty_en.executor": "Run",
+    "Python tests.Python tests for test_name_en.test_name_empty_mentor_en.executor": "Run",
     "Python tests.Python tests for test_name_en.test_name_symbols_en.executor": "Run",
     "Python tests.Python tests for test_name_ffield_ua.test_namepr_1_char_ua.executor": "Run",
     "Python tests.Python tests for test_name_ffield_ua.test_namepr_piletters_ua.executor": "Run",
@@ -1775,6 +585,9 @@
     "Python tests.Python tests for test_name_field_ua.test_name_piletterstr_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_space_field_ua.executor": "Run",
     "Python tests.Python tests for test_name_field_ua.test_name_symb_field_ua.executor": "Run",
+    "Python tests.Python tests for test_name_form_en.test_name_empty_fform_en.executor": "Run",
+    "Python tests.Python tests for test_name_form_pl.test_name_empty_fform_pl.executor": "Run",
+    "Python tests.Python tests for test_name_form_ua.test_name_empty_fform_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_15char_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_1char_ua.executor": "Run",
     "Python tests.Python tests for test_name_ua.test_name_29char_ua.executor": "Run",
@@ -1926,13 +739,16 @@
     "Python tests.Python tests in test_MW_User_Registration_pl.py.executor": "Run",
     "Python tests.Python tests in test_city_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_city_field.py.executor": "Run",
+    "Python tests.Python tests in test_city_field_en.py.executor": "Run",
     "Python tests.Python tests in test_city_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_country_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_country_field.py.executor": "Run",
+    "Python tests.Python tests in test_country_field_en.py.executor": "Run",
     "Python tests.Python tests in test_country_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_discord_en.py.executor": "Run",
     "Python tests.Python tests in test_discord_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_discord_field.py.executor": "Run",
+    "Python tests.Python tests in test_discord_field_en.py.executor": "Run",
     "Python tests.Python tests in test_discord_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_discord_pl.py.executor": "Run",
     "Python tests.Python tests in test_discord_ua.py.executor": "Run",
@@ -1943,6 +759,9 @@
     "Python tests.Python tests in test_email_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_field_ua.py.executor": "Run",
     "Python tests.Python tests in test_email_fieldff_pl.py.executor": "Run",
+    "Python tests.Python tests in test_email_form_en.py.executor": "Run",
+    "Python tests.Python tests in test_email_form_pl.py.executor": "Run",
+    "Python tests.Python tests in test_email_form_ua.py.executor": "Run",
     "Python tests.Python tests in test_email_pl.py.executor": "Run",
     "Python tests.Python tests in test_email_ua.py.executor": "Run",
     "Python tests.Python tests in test_feedback_form_en.py.executor": "Run",
@@ -1951,12 +770,16 @@
     "Python tests.Python tests in test_linkedin_en.py.executor": "Run",
     "Python tests.Python tests in test_linkedin_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_linkedin_field.py.executor": "Run",
+    "Python tests.Python tests in test_linkedin_field_en.py.executor": "Run",
     "Python tests.Python tests in test_linkedin_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_linkedin_pl.py.executor": "Run",
     "Python tests.Python tests in test_linkedin_ua.py.executor": "Run",
     "Python tests.Python tests in test_message_field_en.py.executor": "Run",
     "Python tests.Python tests in test_message_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_message_field_ua.py.executor": "Run",
+    "Python tests.Python tests in test_message_form_en.py.executor": "Run",
+    "Python tests.Python tests in test_message_form_pl.py.executor": "Run",
+    "Python tests.Python tests in test_message_form_ua.py.executor": "Run",
     "Python tests.Python tests in test_motivation_ffield_en.py.executor": "Run",
     "Python tests.Python tests in test_motivation_ffield_pl.py.executor": "Run",
     "Python tests.Python tests in test_motivation_ffield_ua.py.executor": "Run",
@@ -1967,17 +790,22 @@
     "Python tests.Python tests in test_name_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_name_field_ua.py.executor": "Run",
     "Python tests.Python tests in test_name_fieldff_pl.py.executor": "Run",
+    "Python tests.Python tests in test_name_form_en.py.executor": "Run",
+    "Python tests.Python tests in test_name_form_pl.py.executor": "Run",
+    "Python tests.Python tests in test_name_form_ua.py.executor": "Run",
     "Python tests.Python tests in test_name_pl.py.executor": "Run",
     "Python tests.Python tests in test_name_ua.py.executor": "Run",
     "Python tests.Python tests in test_phone_en.py.executor": "Run",
     "Python tests.Python tests in test_phone_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_phone_field.py.executor": "Run",
+    "Python tests.Python tests in test_phone_field_en.py.executor": "Run",
     "Python tests.Python tests in test_phone_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_phone_pl.py.executor": "Run",
     "Python tests.Python tests in test_phone_ua.py.executor": "Run",
     "Python tests.Python tests in test_surname_en.py.executor": "Run",
     "Python tests.Python tests in test_surname_ffield_ua.py.executor": "Run",
     "Python tests.Python tests in test_surname_field.py.executor": "Run",
+    "Python tests.Python tests in test_surname_field_en.py.executor": "Run",
     "Python tests.Python tests in test_surname_field_pl.py.executor": "Run",
     "Python tests.Python tests in test_surname_pl.py.executor": "Run",
     "Python tests.Python tests in test_surname_ua.py.executor": "Run",
@@ -1998,54 +826,40 @@
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\tests_MW_User_Registration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PyCharm\Projects\pythonProjectBaza20\tests" />
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\USER_REGISTRATION" />
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\FEEDBACK_FORM" />
       <recent name="E:\PyCharm\Projects\pythonProjectBaza20\MENTORS_FORM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_name_field_ua.test_name_empty_fform_ua">
-    <configuration name="Python tests for test_name_field_ua.test_name_empty_fform_ua" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_MW_User_Registration_pl.py">
+    <configuration name="Python tests for test_country_field_pl.test_country_hyphen_user_reg_pl" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FEEDBACK_FORM/tests_Feedback_form_UA" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_name_field_ua.test_name_empty_fform_ua&quot;" />
+      <option name="_new_target" value="&quot;test_country_field_pl.test_country_hyphen_user_reg_pl&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_city_field_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_MW_User_Registration_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProjectBaza20" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_city_field_pl.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_country_field_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonProjectBaza20" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_country_field_pl.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_MW_User_Registration_pl.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -2055,12 +869,27 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_discord_field_pl.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_linkedin_field_pl.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProjectBaza20" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_linkedin_field_pl.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -2070,22 +899,22 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_motivation_ffield_pl.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_name_field_ua.test_name_empty_fform_ua" />
+        <item itemvalue="Python tests.Python tests in test_MW_User_Registration_pl.py" />
         <item itemvalue="Python tests.Python tests in test_motivation_ffield_pl.py" />
+        <item itemvalue="Python tests.Python tests in test_linkedin_field_pl.py" />
         <item itemvalue="Python tests.Python tests in test_discord_field_pl.py" />
-        <item itemvalue="Python tests.Python tests in test_country_field_pl.py" />
-        <item itemvalue="Python tests.Python tests in test_city_field_pl.py" />
+        <item itemvalue="Python tests.Python tests for test_country_field_pl.test_country_hyphen_user_reg_pl" />
       </list>
     </recent_temporary>
   </component>
