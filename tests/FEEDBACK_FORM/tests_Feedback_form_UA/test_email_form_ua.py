@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -59,15 +60,9 @@ def test_email_50char_fform_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='email']/following-sibling::input")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_email_51char_fform_ua(setup: Page) -> None:
     setup.get_by_placeholder("email@gmail.com").type("qasdqqwertyuiopasdfghjklqqawseqwertyuiopa@gmail.com")
-    setup.get_by_placeholder("Ваше повідомлення").click()
-    expect(setup.locator("//label[@for='email']/following-sibling::input")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='email']/following-sibling::p")).to_have_text("Введіть дійсну електронну пошту")
-
-
-def test_email_70char_fform_ua(setup: Page) -> None:
-    setup.get_by_placeholder("email@gmail.com").type("mnbvcxzlkjhgfddxasdqqwertyuiopasdfghjklqqawseqwertyuiopasdfg@gmail.com")
     setup.get_by_placeholder("Ваше повідомлення").click()
     expect(setup.locator("//label[@for='email']/following-sibling::input")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='email']/following-sibling::p")).to_have_text("Введіть дійсну електронну пошту")

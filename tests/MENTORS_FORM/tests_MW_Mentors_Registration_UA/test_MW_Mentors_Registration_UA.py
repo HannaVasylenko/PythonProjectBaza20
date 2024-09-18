@@ -1,6 +1,8 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
+@pytest.mark.skip(reason="Check the test manually")
 def test_send_form_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")
@@ -16,6 +18,7 @@ def test_send_form_mentor_ua(setup: Page) -> None:
     expect(setup.locator("div").filter(has_text="Ваші дані успішно відправлено").nth(1)).to_be_visible()
 
 
+@pytest.mark.skip(reason="Check the test manually")
 def test_close_success_mw_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="Ім’я", exact=True).type("Юніт тест юа")

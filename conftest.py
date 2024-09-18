@@ -5,6 +5,7 @@ from pytest import fixture
 
 @fixture
 def setup(page: Page) -> Page:
+    page.set_viewport_size({"width": 1519, "height": 711})
     page.goto('/')
     page.locator("//button[@class='CloseBtn_btn__ij9AH CookiesModal_close__tvIj3']").click()
     yield page
@@ -20,6 +21,7 @@ def screenshot_after_test(request, setup: Page):
 
 @fixture
 def setup_en(page: Page) -> Page:
+    page.set_viewport_size({"width": 1519, "height": 711})
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
     page.get_by_text("EN", exact=True).click()
@@ -29,6 +31,7 @@ def setup_en(page: Page) -> Page:
 
 @fixture
 def setup_pl(page: Page) -> Page:
+    page.set_viewport_size({"width": 1519, "height": 711})
     page.goto("/")
     page.get_by_label("для зміни мови сторінки. вибрана мова").click()
     page.get_by_text("PL", exact=True).click()

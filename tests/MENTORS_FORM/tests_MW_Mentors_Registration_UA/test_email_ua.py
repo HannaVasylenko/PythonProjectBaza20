@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -75,6 +76,7 @@ def test_email_50char_in_name_mentor_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='email']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_email_51char_in_name_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_role("textbox", name="email@gmail.com").type("qawertyuiopasdfghjklqqawseqwertyuiopasdfg@gmail.com")

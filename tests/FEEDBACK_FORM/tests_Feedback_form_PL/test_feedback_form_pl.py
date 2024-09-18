@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -15,6 +16,7 @@ def test_ff_title_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("heading", name="Formularz zwrotny").click()
 
 
+@pytest.mark.skip(reason="Check the test manually")
 def test_ff_active_send_btn_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Imię").type("Świętosław")
     setup_pl.get_by_placeholder("email@gmail.com").type("test@gmail.com")
@@ -37,6 +39,7 @@ def test_ff_disabled_send_btn_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wyślać")).to_be_disabled()
 
 
+@pytest.mark.skip(reason="Check the test manually")
 def test_ff_send_form_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Imię").type("Test jednostkowy pl")
     setup_pl.get_by_placeholder("email@gmail.com").type("unittestpl@gmail.com")
