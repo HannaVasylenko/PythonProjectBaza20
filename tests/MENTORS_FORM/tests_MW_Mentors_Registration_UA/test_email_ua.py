@@ -131,7 +131,7 @@ def test_email_symb_in_name_mentor_ua(setup: Page) -> None:
 
 def test_email_space_in_name_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_role("textbox", name="email@gmail.com").type("Stepan Bandera@gmail.com")
+    setup.get_by_role("textbox", name="email@gmail.com").type("test program@gmail.com")
     setup.get_by_placeholder("+380 xx xxx xx xx").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='email']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='email']/following-sibling::p")).to_have_text("Введіть дійсну електронну пошту")

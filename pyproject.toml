@@ -17,7 +17,7 @@ dependencies = [
 
 [tool.pytest.ini_options]
 minversion = "7.0"
-addopts = "--base-url https://baza-2-front-one.vercel.app/ --browser-channel chrome --headed --slowmo 50"
+addopts = "--base-url https://baza-2-front-one.vercel.app/ --browser-channel chrome --headed --slowmo 100"
 testpaths = [
     "tests",
 ]

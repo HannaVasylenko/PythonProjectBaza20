@@ -18,7 +18,7 @@ def test_ff_title_ua(setup: Page) -> None:
 
 @pytest.mark.skip(reason="Check the test manually")
 def test_ff_active_send_btn_ua(setup: Page) -> None:
-    setup.get_by_placeholder("Ім’я").type("Степан Андрійович Бандера")
+    setup.get_by_placeholder("Ім’я").type("Тестування продукту")
     setup.get_by_placeholder("email@gmail.com").type("test@gmail.com")
     setup.get_by_placeholder("Ваше повідомлення").type("Тестове повідомлення")
     expect(setup.get_by_role("button", name="Відправити")).to_be_enabled()

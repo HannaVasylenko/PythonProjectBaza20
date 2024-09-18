@@ -42,28 +42,28 @@ def test_surname_3char_mentor_ua(setup: Page) -> None:
 
 def test_surname_25char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("Степан Андрійович Бандера")
+    setup.get_by_placeholder("Прізвище").type("Тестування продукту за до")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_surname_49char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("СтепанАндрійовичБандера КоновалецьЄвгенМихайлович")
+    setup.get_by_placeholder("Прізвище").type("Тестування продукту за допомогою спеціальної прог")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_surname_50char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("Степан Бандера Коновалець Євген Шухевич Романдіячі")
+    setup.get_by_placeholder("Прізвище").type("Тестування продукту за допомогою спеціальної прогр")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_surname_51char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("Степан Бандера Коновалець Євген Шухевич Роман діячі")
+    setup.get_by_placeholder("Прізвище").type("Тестування продукту за допомогою спеціальної програ")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='lastName']/following-sibling::p")).to_have_text("Прізвище повинно бути не більше 50 знаків")
@@ -71,7 +71,7 @@ def test_surname_51char_mentor_ua(setup: Page) -> None:
 
 def test_surname_76char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("Степан Андрійович Бандера Коновалець Євген Михайлович Шухевич Роман Осипович")
+    setup.get_by_placeholder("Прізвище").type("Тестування продукту за допомогою спеціальної програми для покращення якостіп")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='lastName']/following-sibling::p")).to_have_text("Прізвище повинно бути не більше 50 знаків")
@@ -79,21 +79,21 @@ def test_surname_76char_mentor_ua(setup: Page) -> None:
 
 def test_surname_apostrophe_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("С'тепан'Андрійович'Бандера")
+    setup.get_by_placeholder("Прізвище").type("Т'ес'тува'ння про'дукту")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_surname_hyphen_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("С-тепан-Андрійович-Бандера")
+    setup.get_by_placeholder("Прізвище").type("Т-ес-тува-ння про-дукту")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_surname_numb_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("СтепанБандера1234567890")
+    setup.get_by_placeholder("Прізвище").type("Тестуванняпродукту1234567890")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='lastName']/following-sibling::p")).to_have_text("Введіть коректне Прізвище")
@@ -101,7 +101,7 @@ def test_surname_numb_mentor_ua(setup: Page) -> None:
 
 def test_surname_symbols_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Прізвище").type("С.теп@н,Бандер*а!")
+    setup.get_by_placeholder("Прізвище").type("Т.ест@у,ванняп*р!")
     setup.get_by_role("textbox", name="Ім’я", exact=True).click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='lastName']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='lastName']/following-sibling::p")).to_have_text("Введіть коректне Прізвище")

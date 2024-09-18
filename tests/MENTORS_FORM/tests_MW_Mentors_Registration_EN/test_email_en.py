@@ -131,7 +131,7 @@ def test_email_symb_in_name_mentor_en(setup_en: Page) -> None:
 
 def test_email_space_in_name_mentor_en(setup_en: Page) -> None:
     setup_en.get_by_role("button", name="Become a mentor").click()
-    setup_en.get_by_role("textbox", name="email@gmail.com").type("Stepan Bandera@gmail.com")
+    setup_en.get_by_role("textbox", name="email@gmail.com").type("test program@gmail.com")
     setup_en.get_by_placeholder("+380 xx xxx xx xx").click()
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='email']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup_en.locator("//label[@for='email']/following-sibling::p")).to_have_text("Please enter a valid email")

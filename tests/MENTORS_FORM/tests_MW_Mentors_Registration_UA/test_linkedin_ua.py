@@ -20,7 +20,7 @@ def test_ln_space_mentor_ua(setup: Page) -> None:
 
 def test_ln_valid_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/StepanBandera")
+    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe")
 
@@ -75,7 +75,7 @@ def test_ln_250char_mentor_ua(setup: Page) -> None:
 
 def test_ln_without_http_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("www.linkedin.com/in/StepanBandera")
+    setup.get_by_placeholder("Лінк на профіль").type("www.linkedin.com/in/test")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='linkedin']/following-sibling::p")).to_have_text("Введіть дійсне посилання на профіль в Linkedin")
@@ -99,7 +99,7 @@ def test_ln_symb_mentor_ua(setup: Page) -> None:
 
 def test_ln_numb_in_username_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/StepanBandera1234567890")
+    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/test1234567890")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe")
 
@@ -107,7 +107,7 @@ def test_ln_numb_in_username_mentor_ua(setup: Page) -> None:
 @pytest.mark.skip(reason="Verification is absent from the requirements")
 def test_ln_symb_in_username_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/S!epan,Ban?era@")
+    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/t!estp,ro?gram@")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='linkedin']/following-sibling::p")).to_have_text("Введіть дійсне посилання на профіль в Linkedin")
@@ -115,7 +115,7 @@ def test_ln_symb_in_username_mentor_ua(setup: Page) -> None:
 
 def test_ln_username_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("StepanBandera1234567890")
+    setup.get_by_placeholder("Лінк на профіль").type("test1234567890")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='linkedin']/following-sibling::p")).to_have_text("Введіть дійсне посилання на профіль в Linkedin")
@@ -131,7 +131,7 @@ def test_ln_lnpart_mentor_ua(setup: Page) -> None:
 
 def test_ln_cyrillic_in_username_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/СтепанАндрійовичБандера")
+    setup.get_by_placeholder("Лінк на профіль").type("https://www.linkedin.com/in/тестування")
     setup.get_by_text("-15.00").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='linkedin']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
     expect(setup.locator("//label[@for='linkedin']/following-sibling::p")).to_have_text("Введіть дійсне посилання на профіль в Linkedin")

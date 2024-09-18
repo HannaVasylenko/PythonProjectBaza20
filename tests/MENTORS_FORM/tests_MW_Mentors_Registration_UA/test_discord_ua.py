@@ -115,14 +115,14 @@ def test_discord_numb_mentor_ua(setup: Page) -> None:
 
 def test_discord_underline_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Iм'я користувача в Discord").type("s_tepan_andriyovych_bandera")
+    setup.get_by_placeholder("Iм'я користувача в Discord").type("t_es_tpro_gram")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
 def test_discord_point_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Iм'я користувача в Discord").type("s.tepan.andriyovych.bandera")
+    setup.get_by_placeholder("Iм'я користувача в Discord").type("t.es.tpro.gram")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
 
