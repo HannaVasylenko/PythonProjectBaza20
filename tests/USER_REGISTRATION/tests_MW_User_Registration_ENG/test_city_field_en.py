@@ -7,7 +7,7 @@ def test_city_space_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("Kyiv").type(" ")
     setup_en.get_by_placeholder("Ukraine").click()
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("Enter the correct city name")
+    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("Enter the name of your city")
 
 
 def test_city_empty_user_reg_en(setup_en: Page) -> None:
@@ -15,7 +15,8 @@ def test_city_empty_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Kyiv").click()
     setup_en.get_by_placeholder("Ukraine").click()
-    expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe")
+    expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
+    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("Enter the name of your city")
 
 
 def test_city_1char_user_reg_en(setup_en: Page) -> None:
@@ -24,8 +25,7 @@ def test_city_1char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("Kyiv").type("k")
     setup_en.get_by_placeholder("Ukraine").click()
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("Enter the correct city name")
-    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("error mes >2char")
+    expect(setup_en.locator("//label[@for='city']/following-sibling::p")).to_have_text("The name of the city must be at least 2 characters long")
 
 
 def test_city_2char_user_reg_en(setup_en: Page) -> None:

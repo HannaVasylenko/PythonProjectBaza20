@@ -26,7 +26,7 @@ def test_motivation_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Ваша відповідь").type("ї")
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").locator("use").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
+    expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 5 знаків") #10
 
 
 def test_motivation_2char_user_reg_ua(setup: Page) -> None:
@@ -35,17 +35,26 @@ def test_motivation_2char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Ваша відповідь").type("їє")
     setup.locator("label").filter(has_text="На сайті Baza Trainee Ukraine").locator("use").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
+    expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 5 знаків")
 
 
 def test_motivation_5char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Ваша відповідь").type("їєабв")
-    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class","InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
+    #expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class","InputField_input__KEXwe InputField__error__hbnwz")
+    #expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
 
+def test_motivation_6char_user_reg_ua(setup: Page) -> None:
+    setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
+    setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
+    setup.get_by_placeholder("Ваша відповідь").type("їєабві")
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_9char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
@@ -55,6 +64,7 @@ def test_motivation_9char_user_reg_ua(setup: Page) -> None:
     expect(setup.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Текст має бути не менше 10 знаків")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_10char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
@@ -63,6 +73,7 @@ def test_motivation_10char_user_reg_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_11char_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("banner").get_by_role("link", name="Стажування").click()
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()

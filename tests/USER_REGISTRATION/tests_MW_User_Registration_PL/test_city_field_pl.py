@@ -7,7 +7,7 @@ def test_city_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Kijów").type(" ")
     setup_pl.get_by_placeholder("Ukraina").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("error mes")
+    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("Wpisz nazwę swojego miasta")
 
     
 def test_city_empty_user_reg_pl(setup_pl: Page) -> None:
@@ -15,7 +15,8 @@ def test_city_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Kijów").click()
     setup_pl.get_by_placeholder("Ukraina").click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe")
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
+    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("Wpisz nazwę swojego miasta")
 
 
 def test_city_1char_user_reg_pl(setup_pl: Page) -> None:
@@ -24,8 +25,7 @@ def test_city_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Kijów").type("ę")
     setup_pl.get_by_placeholder("Ukraina").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("Wpisz poprawną nazwę miasta")
-    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("error mes >2char")
+    expect(setup_pl.locator("//label[@for='city']/following-sibling::p")).to_have_text("Nazwa miasta musi mieć co najmniej 2 znaki")
 
 
 def test_city_2char_user_reg_pl(setup_pl: Page) -> None:

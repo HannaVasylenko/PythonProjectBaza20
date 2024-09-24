@@ -8,7 +8,7 @@ def test_city_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Київ").type(" ")
     setup.get_by_placeholder("Україна").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text("error mes")
+    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text("Введіть назву вашого міста")
 
 
 def test_city_empty_user_reg_ua(setup: Page) -> None:
@@ -16,7 +16,8 @@ def test_city_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Київ").click()
     setup.get_by_placeholder("Україна").click()
-    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe")
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
+    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text("Введіть назву вашого міста")
 
 
 def test_city_1char_user_reg_ua(setup: Page) -> None:
@@ -25,8 +26,7 @@ def test_city_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Київ").type("х")
     setup.get_by_placeholder("Україна").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='city']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text("Введіть коректну назву міста")
-    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text(">2char")
+    expect(setup.locator("//label[@for='city']/following-sibling::p")).to_have_text("Назва міста повинна бути не менше 2 знаків")
 
 
 def test_city_2char_user_reg_ua(setup: Page) -> None:

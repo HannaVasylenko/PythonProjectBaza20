@@ -8,7 +8,7 @@ def test_country_space_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Україна").type(" ")
     setup.get_by_placeholder("Київ").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть коректну назву країни")
+    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть назву вашої країни")
 
     
 def test_country_empty_user_reg_ua(setup: Page) -> None:
@@ -16,7 +16,8 @@ def test_country_empty_user_reg_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Доєднатись до проєкту").first.click()
     setup.get_by_placeholder("Україна").click()
     setup.get_by_placeholder("Київ").click()
-    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe")
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
+    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть назву вашої країни")
 
 
 def test_country_1char_user_reg_ua(setup: Page) -> None:
@@ -25,8 +26,7 @@ def test_country_1char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Україна").type("х")
     setup.get_by_placeholder("Київ").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть коректну назву країни")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Назва країни повинна бути не менше 4 знаків")
 
 
 def test_country_2char_user_reg_ua(setup: Page) -> None:
@@ -35,8 +35,7 @@ def test_country_2char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Україна").type("ха")
     setup.get_by_placeholder("Київ").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть коректну назву країни")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Назва країни повинна бути не менше 4 знаків")
 
 
 def test_country_3char_user_reg_ua(setup: Page) -> None:
@@ -45,8 +44,7 @@ def test_country_3char_user_reg_ua(setup: Page) -> None:
     setup.get_by_placeholder("Україна").type("хар")
     setup.get_by_placeholder("Київ").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Введіть коректну назву країни")
-    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup.locator("//label[@for='country']/following-sibling::p")).to_have_text("Назва країни повинна бути не менше 4 знаків")
 
 
 def test_country_4char_user_reg_ua(setup: Page) -> None:

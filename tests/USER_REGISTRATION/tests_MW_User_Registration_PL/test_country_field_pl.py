@@ -7,7 +7,7 @@ def test_country_space_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Ukraina").type(" ")
     setup_pl.get_by_placeholder("Kijów").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
+    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wpisz nazwę swojego kraju")
 
 
 def test_country_empty_user_reg_pl(setup_pl: Page) -> None:
@@ -15,7 +15,8 @@ def test_country_empty_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Ukraina").click()
     setup_pl.get_by_placeholder("Kijów").click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe")
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
+    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wpisz nazwę swojego kraju")
 
 
 def test_country_1char_user_reg_pl(setup_pl: Page) -> None:
@@ -24,8 +25,7 @@ def test_country_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Ukraina").type("ę")
     setup_pl.get_by_placeholder("Kijów").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Nazwa kraju musi mieć co najmniej 4 znaki")
 
 
 def test_country_2char_user_reg_pl(setup_pl: Page) -> None:
@@ -34,8 +34,7 @@ def test_country_2char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Ukraina").type("ęł")
     setup_pl.get_by_placeholder("Kijów").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Nazwa kraju musi mieć co najmniej 4 znaki")
 
 
 def test_country_3char_user_reg_pl(setup_pl: Page) -> None:
@@ -44,8 +43,7 @@ def test_country_3char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Ukraina").type("ęłŻ")
     setup_pl.get_by_placeholder("Kijów").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='country']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Wprowadź poprawną nazwę kraju")
-    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("error mes >4char")
+    expect(setup_pl.locator("//label[@for='country']/following-sibling::p")).to_have_text("Nazwa kraju musi mieć co najmniej 4 znaki")
 
 
 def test_country_4char_user_reg_pl(setup_pl: Page) -> None:

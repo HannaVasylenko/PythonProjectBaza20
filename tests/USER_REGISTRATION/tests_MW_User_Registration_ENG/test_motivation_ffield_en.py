@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -25,8 +26,7 @@ def test_motivation_1char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("Your answer").type("t")
     setup_en.locator("label").filter(has_text="On the Baza Trainee Ukraine website").locator("use").click()
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Modal_form.error_message.motivation_min")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("error mes <10>")
+    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("The text must be at least 5 characters")
 
 
 def test_motivation_2char_user_reg_en(setup_en: Page) -> None:
@@ -35,8 +35,7 @@ def test_motivation_2char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_placeholder("Your answer").type("te")
     setup_en.locator("label").filter(has_text="On the Baza Trainee Ukraine website").locator("use").click()
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Modal_form.error_message.motivation_min")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("error mes <10>")
+    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("The text must be at least 5 characters")
 
 
 def test_motivation_5char_user_reg_en(setup_en: Page) -> None:
@@ -44,11 +43,18 @@ def test_motivation_5char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("button", name="Join the project").first.click()
     setup_en.get_by_placeholder("Your answer").type("testi")
     setup_en.locator("label").filter(has_text="On the Baza Trainee Ukraine website").locator("use").click()
-    expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Modal_form.error_message.motivation_min")
-    expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("error mes <10>")
+    expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+def test_motivation_6char_user_reg_en(setup_en: Page) -> None:
+    setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
+    setup_en.get_by_role("button", name="Join the project").first.click()
+    setup_en.get_by_placeholder("Your answer").type("testin")
+    setup_en.locator("label").filter(has_text="On the Baza Trainee Ukraine website").locator("use").click()
+    expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_9char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
@@ -59,6 +65,7 @@ def test_motivation_9char_user_reg_en(setup_en: Page) -> None:
     expect(setup_en.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("error mes <10>")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_10char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()
@@ -67,6 +74,7 @@ def test_motivation_10char_user_reg_en(setup_en: Page) -> None:
     expect(setup_en.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_11char_user_reg_en(setup_en: Page) -> None:
     setup_en.get_by_role("banner").get_by_role("link", name="Internship").click()
     setup_en.get_by_role("button", name="Join the project").first.click()

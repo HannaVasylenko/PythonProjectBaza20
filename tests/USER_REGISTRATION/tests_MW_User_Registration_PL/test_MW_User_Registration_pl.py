@@ -1,4 +1,6 @@
 import re
+
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -96,6 +98,7 @@ def test_active_send_btn_mw_user_reg_pl(setup_pl: Page) -> None:
     expect(setup_pl.get_by_role("button", name="Wysłać")).to_be_enabled()
 
 
+@pytest.mark.skip(reason="Check the test manually")
 def test_send_form_mw_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()

@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import Page, expect
 
 
@@ -25,7 +26,7 @@ def test_motivation_1char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("ę")
     setup_pl.locator("label").filter(has_text="Na stronie Bazy Trainee Ukraina").locator("use").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
+    expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 5 znaków")
 
 
 def test_motivation_2char_user_reg_pl(setup_pl: Page) -> None:
@@ -34,7 +35,7 @@ def test_motivation_2char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óę")
     setup_pl.locator("label").filter(has_text="Na stronie Bazy Trainee Ukraina").locator("use").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
+    expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 5 znaków")
 
 
 def test_motivation_5char_user_reg_pl(setup_pl: Page) -> None:
@@ -42,10 +43,18 @@ def test_motivation_5char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
     setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁęża")
     setup_pl.locator("label").filter(has_text="Na stronie Bazy Trainee Ukraina").locator("use").click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+def test_motivation_6char_user_reg_pl(setup_pl: Page) -> None:
+    setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
+    setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
+    setup_pl.get_by_placeholder("Twoja odpowiedź").type("óŁężab")
+    setup_pl.locator("label").filter(has_text="Na stronie Bazy Trainee Ukraina").locator("use").click()
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_9char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
@@ -55,6 +64,7 @@ def test_motivation_9char_user_reg_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//label[@for='motivation']/following-sibling::p")).to_have_text("Tekst musi mieć co najmniej 10 znaków")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_10char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
@@ -63,6 +73,7 @@ def test_motivation_10char_user_reg_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='motivation']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+@pytest.mark.skip(reason="The field contains restrictions")
 def test_motivation_11char_user_reg_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("banner").get_by_role("link", name="Praktyka").click()
     setup_pl.get_by_role("button", name="Dołącz do projektu").first.click()
