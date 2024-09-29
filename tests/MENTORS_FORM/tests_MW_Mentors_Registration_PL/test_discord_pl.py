@@ -45,7 +45,7 @@ def test_discord_1char_mentor_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").type("a")
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
+    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Nazwa użytkownika musi mieć co najmniej 2 znaki")
 
 
 def test_discord_2char_mentor_pl(setup_pl: Page) -> None:
@@ -69,26 +69,26 @@ def test_discord_17char_mentor_pl(setup_pl: Page) -> None:
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+def test_discord_29char_mentor_pl(setup_pl: Page) -> None:
+    setup_pl.get_by_role("button", name="Zostać mentorem").click()
+    setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrft")
+    setup_pl.get_by_placeholder("Link do profilu").click()
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
+def test_discord_30char_mentor_pl(setup_pl: Page) -> None:
+    setup_pl.get_by_role("button", name="Zostać mentorem").click()
+    setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftg")
+    setup_pl.get_by_placeholder("Link do profilu").click()
+    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
 def test_discord_31char_mentor_pl(setup_pl: Page) -> None:
     setup_pl.get_by_role("button", name="Zostać mentorem").click()
     setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgs")
     setup_pl.get_by_placeholder("Link do profilu").click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
-
-
-def test_discord_32char_mentor_pl(setup_pl: Page) -> None:
-    setup_pl.get_by_role("button", name="Zostać mentorem").click()
-    setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgsa")
-    setup_pl.get_by_placeholder("Link do profilu").click()
-    expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
-
-
-def test_discord_33char_mentor_pl(setup_pl: Page) -> None:
-    setup_pl.get_by_role("button", name="Zostać mentorem").click()
-    setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgsak")
-    setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
+    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Nazwa użytkownika nie może przekraczać 30 znaków")
 
 
 def test_discord_50char_mentor_pl(setup_pl: Page) -> None:
@@ -96,7 +96,7 @@ def test_discord_50char_mentor_pl(setup_pl: Page) -> None:
     setup_pl.locator("//input[@id='discord']").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklq")
     setup_pl.get_by_placeholder("Link do profilu").click()
     expect(setup_pl.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Wprowadź prawidłową nazwę użytkownika Discord")
+    expect(setup_pl.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Nazwa użytkownika nie może przekraczać 30 znaków")
 
 
 def test_discord_up_case_mentor_pl(setup_pl: Page) -> None:

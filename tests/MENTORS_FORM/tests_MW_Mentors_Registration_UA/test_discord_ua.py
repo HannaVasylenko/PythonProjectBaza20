@@ -37,7 +37,7 @@ def test_discord_1char_mentor_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("a")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")
+    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Ім'я користувача повинно мати не менше 2 знаків")
 
 
 def test_discord_2char_mentor_ua(setup: Page) -> None:
@@ -61,26 +61,26 @@ def test_discord_17char_mentor_ua(setup: Page) -> None:
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
 
 
+def test_discord_29char_mentor_ua(setup: Page) -> None:
+    setup.get_by_role("button", name="Стати ментором").click()
+    setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrfa")
+    setup.get_by_placeholder("Лінк на профіль").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
+def test_discord_30char_mentor_ua(setup: Page) -> None:
+    setup.get_by_role("button", name="Стати ментором").click()
+    setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrftg")
+    setup.get_by_placeholder("Лінк на профіль").click()
+    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
+
+
 def test_discord_31char_mentor_ua(setup: Page) -> None:
     setup.get_by_role("button", name="Стати ментором").click()
     setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrftgs")
     setup.get_by_placeholder("Лінк на профіль").click()
-    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
-
-
-def test_discord_32char_mentor_ua(setup: Page) -> None:
-    setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrftgsa")
-    setup.get_by_placeholder("Лінк на профіль").click()
-    expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe")
-
-
-def test_discord_33char_mentor_ua(setup: Page) -> None:
-    setup.get_by_role("button", name="Стати ментором").click()
-    setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrftgsak")
-    setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")
+    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Ім'я користувача повинно бути не більше 30 знаків")
 
 
 def test_discord_50char_mentor_ua(setup: Page) -> None:
@@ -88,7 +88,7 @@ def test_discord_50char_mentor_ua(setup: Page) -> None:
     setup.get_by_placeholder("Iм'я користувача в Discord").type("qwertyuiopasdfghjklqqawsedrftgqwertyuiopasdfghjklq")
     setup.get_by_placeholder("Лінк на профіль").click()
     expect(setup.locator("//div[@class='RegistrationFormModal_wrapper__bgALB']//input[@id='discord']")).to_have_attribute("class", "InputField_input__KEXwe InputField__error__hbnwz")
-    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Введіть коректне ім'я користувача в Discord")
+    expect(setup.locator("//label[@for='discord']/following-sibling::p")).to_have_text("Ім'я користувача повинно бути не більше 30 знаків")
 
 
 def test_discord_up_case_mentor_ua(setup: Page) -> None:
