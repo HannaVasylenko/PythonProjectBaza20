@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited a README.md file. Added images">
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited a README.md file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1023,7 +1024,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727945783136</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Edited a README.md file">
+      <option name="closed" value="true" />
+      <created>1727945904548</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727945904548</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1065,8 +1074,8 @@
     <MESSAGE value="Fixed xpath, edited tests, changed error messages due to changes in requirements" />
     <MESSAGE value="Edited tests due to changes in requirements" />
     <MESSAGE value="Added a README file. Changed the base url to the actual one" />
-    <MESSAGE value="Edited a README.md file" />
     <MESSAGE value="Edited a README.md file. Added images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited a README.md file. Added images" />
+    <MESSAGE value="Edited a README.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited a README.md file" />
   </component>
 </project>

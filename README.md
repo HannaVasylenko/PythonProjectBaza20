@@ -10,6 +10,7 @@
 </div>
 <br><br>
 To run the project on your computer, install:
+
 1. [PyCharm](https://www.jetbrains.com/pycharm/)
 
 2. [Python](https://www.python.org/)
