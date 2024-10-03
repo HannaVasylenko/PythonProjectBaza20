@@ -8,7 +8,7 @@
 <div style="text-align: center;">
     <img src="assets/userform.png" alt="Form image" width="50%" />
 </div>
-
+<br><br>
 To run the project on your computer, install:
 1. [PyCharm](https://www.jetbrains.com/pycharm/)
 

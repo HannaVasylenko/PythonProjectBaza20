@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Added a README file. Changed the base url to the actual one">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="20783eba-804f-4288-ae9f-d8e9ca8bd688" name="Changes" comment="Edited a README.md file. Added images">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/test_name_empty_fform_ua[chromium].png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/test_name_empty_fform_ua[chromium].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_scr/test_title_mw_user_reg_ua[chromium].png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_scr/test_title_mw_user_reg_ua[chromium].png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1010,7 +1007,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727872404608</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Edited a README.md file">
+      <option name="closed" value="true" />
+      <created>1727945671775</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727945671775</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Edited a README.md file. Added images">
+      <option name="closed" value="true" />
+      <created>1727945783136</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727945783136</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1052,6 +1065,8 @@
     <MESSAGE value="Fixed xpath, edited tests, changed error messages due to changes in requirements" />
     <MESSAGE value="Edited tests due to changes in requirements" />
     <MESSAGE value="Added a README file. Changed the base url to the actual one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a README file. Changed the base url to the actual one" />
+    <MESSAGE value="Edited a README.md file" />
+    <MESSAGE value="Edited a README.md file. Added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited a README.md file. Added images" />
   </component>
 </project>
