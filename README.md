@@ -9,6 +9,11 @@
     <img src="assets/userform.png" alt="Form image" width="50%" />
 </div>
 <br><br>
+
+> Created verifications to test each field in each form. I split the tests into en pl ua, taking into account the localization of the website.
+
+<img src="assets/tests.png" alt="Form image" width="50%" />
+
 To run the project on your computer, install:
 
 1. [PyCharm](https://www.jetbrains.com/pycharm/)
