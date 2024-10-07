@@ -11,3 +11,18 @@ venv/
 
 # Ignore test results
 .pytest_cache/
+
+test_scr
+tests/FEEDBACK_FORM/tests_Feedback_form_UA/test_scr/*
+tests/FEEDBACK_FORM/tests_Feedback_form_EN/test_scr/*
+tests/FEEDBACK_FORM/tests_Feedback_form_PL/test_scr/*
+tests/MENTORS_FORM/tests_MW_Mentors_Registration_UA/test_scr/*
+tests/MENTORS_FORM/tests_MW_Mentors_Registration_EN/test_scr/*
+tests/MENTORS_FORM/tests_MW_Mentors_Registration_PL/test_scr/*
+tests/USER_REGISTRATION/tests_MW_User_Registration_ENG/test_scr/*
+tests/USER_REGISTRATION/tests_MW_User_Registration_PL/test_scr/*
+tests/USER_REGISTRATION/tests_MW_User_Registration_UA/test_scr/*
+
+
+
+

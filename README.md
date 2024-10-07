@@ -14,6 +14,8 @@
 
 <img src="assets/tests.png" alt="Form image" width="50%" />
 
+> The form for registering participants has been replaced with a Google form, as the website will be integrated with the CRM system. The tests were developed in advance.
+
 To run the project on your computer, install:
 
 1. [PyCharm](https://www.jetbrains.com/pycharm/)
