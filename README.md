@@ -31,8 +31,15 @@ pip install playwright
 playwright install
 ```
 5. Update Python packages if necessary
-6. Run tests
-7. Run all tests, enter the command in the terminal:
+6. Add an interpreter and install packages
+```
+pytest-base-url
+
+pytest-playwright
+```
+
+7. Run tests
+8. Run all tests, enter the command in the terminal:
 
 ```
 pytest
